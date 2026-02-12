@@ -1,0 +1,246 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    /* Subtract header height */
+    background-color: var(--color-bg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.hero-container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+}
+
+/* Visuals Section (Left) */
+.hero-visuals {
+    width: 60%;
+    position: relative;
+    height: calc(100vh - 80px);
+    /* Fill remaining height */
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    height: 120%;
+    /* Taller to allow smooth scrolling without cutoffs */
+    transform: translateY(-10%) rotate(-5deg);
+    /* Slight tilt for simpler visuals or keep straight? Image shows straight. Keeping straight for cleaner look as per prompt "identical". */
+    transform: translateY(-10%);
+    /* Only offset Y for coverage */
+    display: flex;
+    justify-content: center;
+}
+
+/* Reset rotation for "identical" look if image is straight grids. 
+   Image shows 2 simple columns. 
+*/
+.carousel-wrapper {
+    transform: none;
+    height: 100%;
+}
+
+.carousel-column {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Gradients */
+.gradient-overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-bg) 0%, transparent 20%, transparent 80%, var(--color-bg) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.gradient-overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, var(--color-bg) 0%, transparent 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+/* Content Section (Right) */
+.hero-content {
+    width: 40%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* Right align as per image visuals mostly */
+    text-align: right;
+    z-index: 10;
+    position: relative;
+}
+
+/* Stamp Badge */
+.stamp-badge {
+    background-color: var(--color-accent);
+    /* Gold */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a0b2e;
+    /* Always dark text on gold badge */
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    /* Add dashed border for sticker effect */
+    border: 4px dashed #fff;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.badge-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.badge-text-top {
+    font-size: 8px;
+    max-width: 80px;
+    margin-bottom: 2px;
+}
+
+.badge-number {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.badge-text-bottom {
+    font-size: 10px;
+}
+
+/* Typography */
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.hero-details {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: var(--color-text-muted);
+}
+
+.hero-date,
+.hero-location {
+    margin-bottom: 5px;
+}
+
+.cta-button {
+    background-color: transparent;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--color-text);
+    /* Underline style */
+    margin-bottom: 40px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cta-button:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.hero-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-socials a {
+    color: var(--color-text);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.hero-socials a:hover {
+    color: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-visuals {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .hero-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .carousel-wrapper {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .stamp-badge {
+        width: 100px;
+        height: 100px;
+    }
+
+    .badge-number {
+        font-size: 28px;
+    }
+}

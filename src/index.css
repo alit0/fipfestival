@@ -1,0 +1,67 @@
+:root {
+  /* Default (Dark) */
+  --color-bg: #1a0b2e;
+  --color-text: #ffffff;
+  --color-text-muted: #e0e0e0;
+  --color-accent: #ffd700;
+  --color-nav-bg: #2a1b3e;
+  --color-header-top: #1a0b2e;
+  --color-header-text: #ffffff;
+  --color-bg-overlay: rgba(26, 11, 46, 0.95);
+
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --spacing-unit: 8px;
+  --header-height: 80px;
+}
+
+[data-theme='light'] {
+  --color-bg: #f9f9f9;
+  --color-text: #1a0b2e;
+  --color-text-muted: #4a4a4a;
+  --color-accent: #d4af37;
+  /* Slightly darker gold for contrast on white */
+  --color-nav-bg: #ffffff;
+  --color-header-top: #f0f0f0;
+  --color-header-text: #1a0b2e;
+  --color-bg-overlay: rgba(255, 255, 255, 0.98);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}

@@ -1,0 +1,123 @@
+.fip-winning-cases {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+[data-theme='dark'] .fip-winning-cases {
+    background-color: var(--color-bg);
+}
+
+.winning-cases-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2a0a4d;
+    margin-bottom: 5px;
+}
+
+[data-theme='dark'] .winning-cases-title {
+    color: #ffffff;
+}
+
+.winning-cases-subtitle {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #2a0a4d;
+    margin-bottom: 40px;
+}
+
+[data-theme='dark'] .winning-cases-subtitle {
+    color: #a080ff;
+    /* Light purple accent for subtitle in dark mode */
+}
+
+.winning-cases-carousel {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    /* Add some padding for the swiper container */
+}
+
+/* Swiper Slide Styling */
+.case-card {
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+}
+
+.case-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 4px;
+    /* Slight rounding based on image */
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+}
+
+.case-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-content {
+    padding-right: 10px;
+}
+
+.case-metadata {
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .case-metadata {
+    color: #aaa;
+}
+
+.case-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #2a0a4d;
+    margin: 0;
+    line-height: 1.2;
+}
+
+[data-theme='dark'] .case-title {
+    color: #ffffff;
+}
+
+.winning-cases-cta {
+    background-color: #f0ecfc;
+    color: #2a0a4d;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.winning-cases-cta:hover {
+    background-color: #e0d8fa;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .winning-cases-subtitle {
+        font-size: 2rem;
+    }
+
+    .fip-winning-cases {
+        padding: 50px 0;
+    }
+}

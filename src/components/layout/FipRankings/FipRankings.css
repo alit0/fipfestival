@@ -1,0 +1,126 @@
+.fip-rankings {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+[data-theme='dark'] .fip-rankings {
+    background-color: #1a0b2e;
+    /* Dark purple */
+}
+
+.rankings-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2a0a4d;
+    margin-bottom: 50px;
+}
+
+[data-theme='dark'] .rankings-title {
+    color: #ffffff;
+}
+
+.rankings-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+    /* Allow horizontal scroll if needed on smaller screens */
+    padding-bottom: 20px;
+}
+
+.rankings-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rankings-card:hover {
+    transform: translateY(-5px);
+}
+
+.rankings-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.rankings-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rankings-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f0ecfc;
+    /* Light purple info box */
+    padding: 10px 15px;
+    border-top-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    min-width: 70%;
+}
+
+[data-theme='dark'] .rankings-info {
+    background-color: #2a1b3e;
+    /* Dark purple for dark mode */
+    border: 1px solid #3e285c;
+    border-bottom: none;
+    border-left: none;
+}
+
+.rankings-flag {
+    font-size: 1.2rem;
+}
+
+.rankings-country {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #2a0a4d;
+    margin: 0;
+    line-height: 1.2;
+}
+
+[data-theme='dark'] .rankings-country {
+    color: #ffffff;
+}
+
+.rankings-year {
+    font-size: 0.75rem;
+    color: #555;
+    margin: 0;
+}
+
+[data-theme='dark'] .rankings-year {
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .rankings-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .rankings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rankings-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rankings-grid {
+        grid-template-columns: 1fr;
+    }
+}

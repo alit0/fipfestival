@@ -1,0 +1,93 @@
+.fip-socials {
+    padding: 60px 0 80px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+[data-theme='dark'] .fip-socials {
+    background-color: #1a0b2e;
+}
+
+.socials-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #2a0a4d;
+    margin-bottom: 50px;
+}
+
+[data-theme='dark'] .socials-title {
+    color: #ffffff;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-pill {
+    display: flex;
+    align-items: center;
+    background-color: #e6e0f3;
+    /* Light purple/gray */
+    border-radius: 50px;
+    padding: 5px 25px 5px 5px;
+    /* Less padding left because of circle */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    gap: 10px;
+}
+
+[data-theme='dark'] .social-pill {
+    background-color: #2a1b3e;
+    border: 1px solid #3e285c;
+}
+
+.social-pill:hover {
+    transform: translateY(-3px);
+    background-color: #dcd0f0;
+}
+
+[data-theme='dark'] .social-pill:hover {
+    background-color: #382455;
+}
+
+.social-icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #3b446f;
+    /* Dark blue/purple from design */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-label {
+    font-weight: 700;
+    color: #2a0a4d;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .social-label {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fip-socials {
+        padding: 40px 0 60px;
+    }
+
+    .socials-title {
+        font-size: 2rem;
+    }
+
+    .socials-list {
+        gap: 15px;
+    }
+}

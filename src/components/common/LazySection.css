@@ -1,0 +1,18 @@
+.lazy-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.lazy-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-loading {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+}

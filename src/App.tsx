@@ -1,57 +1,22 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header/Header';
-import Hero from './components/layout/Hero/Hero';
-import FipDates from './components/layout/FipDates/FipDates';
 import LazySection from './components/common/LazySection';
+import Home from './pages/Home/Home';
+import Reglamento from './pages/Reglamento/Reglamento';
 
-// Lazy load components
-const FipNews = React.lazy(() => import('./components/layout/FipNews/FipNews'));
-const FipRubros = React.lazy(() => import('./components/layout/FipRubros/FipRubros'));
-const FipJury = React.lazy(() => import('./components/layout/FipJury/FipJury'));
-const FipParallax = React.lazy(() => import('./components/layout/FipParallax/FipParallax'));
-const FipRankings = React.lazy(() => import('./components/layout/FipRankings/FipRankings'));
-const FipWinningCases = React.lazy(() => import('./components/layout/FipWinningCases/FipWinningCases'));
-const FipSocials = React.lazy(() => import('./components/layout/FipSocials/FipSocials'));
+// Lazy load Footer
 const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main style={{ marginTop: '140px' }}>
-        <Hero />
-
-        <LazySection>
-          <FipDates />
-        </LazySection>
-
-        <LazySection>
-          <FipNews />
-        </LazySection>
-
-        <LazySection>
-          <FipRubros />
-        </LazySection>
-
-        <LazySection>
-          <FipJury />
-        </LazySection>
-
-        <LazySection>
-          <FipParallax />
-        </LazySection>
-
-        <LazySection>
-          <FipRankings />
-        </LazySection>
-
-        <LazySection>
-          <FipWinningCases />
-        </LazySection>
-
-        <LazySection>
-          <FipSocials />
-        </LazySection>
+      <main style={{ marginTop: '140px', minHeight: 'calc(100vh - 140px)' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reglamento" element={<Reglamento />} />
+        </Routes>
 
         <LazySection>
           <Footer />

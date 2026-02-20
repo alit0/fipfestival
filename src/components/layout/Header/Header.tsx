@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { useTheme } from '../../../hooks/useTheme';
@@ -9,6 +10,7 @@ const Header: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleLang = () => setIsLangOpen(!isLangOpen);
@@ -36,7 +38,9 @@ const Header: React.FC = () => {
             <div className="header-top">
                 <div className="container header-top-content">
                     <div className="logo">
-                        <h1>FIP<span>festival</span></h1>
+                        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <h1>FIP<span>festival</span></h1>
+                        </Link>
                     </div>
 
                     <div className="header-actions">
@@ -90,7 +94,12 @@ const Header: React.FC = () => {
                     <ul>
                         {navLinks.map((link) => (
                             <li key={link.key}>
-                                <a href={`#${link.key}`} onClick={() => setIsMenuOpen(false)}>{link.label}</a>
+                                <Link
+                                    to={link.key === 'reglamento' ? '/reglamento' : (location.pathname === '/' ? `#${link.key}` : `/#${link.key}`)}
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {link.label}
+                                </Link>
                             </li>
                         ))}
                     </ul>

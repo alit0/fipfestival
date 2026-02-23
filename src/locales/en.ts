@@ -65,6 +65,82 @@ export const en = {
                 "brazil": "BRAZIL"
             }
         },
+        "premios": {
+            "nav": {
+                "costos": "Replica Costs",
+                "medios": "Payment Methods",
+                "envio": "Replica Shipping"
+            },
+            "hero": {
+                "title": "Awards / Replicas",
+                "btnEs": "Replica order form - Spanish",
+                "btnPt": "Replica order form - Portuguese"
+            },
+            "items": {
+                "agency": {
+                    "title": "AGENCY OF THE YEAR",
+                    "desc": "Extraordinary trophy, a true artistic piece, with stylized FIP image, highlighted blue plate on the base.",
+                    "price": "550 US/€"
+                },
+                "brand": {
+                    "title": "BRAND OF THE YEAR",
+                    "desc": "At the request of winners requiring a second plate, specifying category and action, or special award obtained, plus a framed diploma in a “FIP FESTIVALS” box",
+                    "price": "345 US/€"
+                },
+                "grandPrix": {
+                    "title": "GRAND PRIX",
+                    "desc": "Extraordinary trophy with acrylic structure and base, with bas-relief pyrographed texts. It has a lateral bevel on the body and base.",
+                    "price": "420 US/€"
+                },
+                "oro": {
+                    "title": "FIP GOLD",
+                    "desc": "Cast aluminum statuette with gold plating. On the front of its design the laurels and the sun, these come from the National coat of arms of the Argentine Republic, on the back a relief world map. The year legend engraved on the plate.",
+                    "price": "380 US/€"
+                },
+                "plata": {
+                    "title": "FIP SILVER",
+                    "desc": "Cast aluminum statuette with silver plating. On the front of its design the laurels and the sun, these come from the National coat of arms of the Argentine Republic, on the back a relief world map. The year legend engraved on the plate.",
+                    "price": "380 US/€"
+                },
+                "bronce": {
+                    "title": "FIP BRONZE",
+                    "desc": "The original is a diploma and a statuette can be requested",
+                    "price": "350 US/€"
+                }
+            },
+            "costos": {
+                "intro": {
+                    "part1": "To acquire FIP award replicas, the participant must",
+                    "link": "download the purchase form",
+                    "part2": "complete it and send it by e-mail to:"
+                },
+                "important": {
+                    "title": "IMPORTANT",
+                    "p1": "Due to the monetary policy alternatives of the Federal Reserve and the European Central Bank, the replica prices listed are in dollars for the Latin American region and in euros for the European region, as corresponds to their regional exchange currencies.",
+                    "p2Bold": "They do not include packaging and shipping costs, nor customs nationalization taxes.",
+                    "p2Text": "The latter are borne by the participant"
+                }
+            },
+            "payment": {
+                "title": "Payment Methods",
+                "argentina": {
+                    "title": "Argentina",
+                    "desc": "Payments with credit cards. In case of payments with credit cards, the corresponding 21% (VAT) will be added."
+                },
+                "international": {
+                    "title": "International payments under 1000 US/€",
+                    "desc": "For wire transfers under 1000 U$/€ applicants must consult the payment options to FIP. In the case of money remittances, the operation expenses are borne by the buyer"
+                },
+                "paypal": {
+                    "title": "Collections with PayPal system",
+                    "desc": "FIP operates with the PayPal system. It does so by sending a payment link that expires on the 3rd day and must be renewed. It is clarified that this system DOES NOT OPERATE with corporate cards. Consult FIP if payment is in Euros due to a special Tax rule in Argentina"
+                },
+                "others": {
+                    "title": "Other forms of payment",
+                    "desc": "Regarding local taxes and their treatment in the country of origin. The participant must pay the exact amount of the invoice. The Festival will not recognize any deduction attributable to local taxes of the country of origin from where they register to FIP"
+                }
+            }
+        },
         "parallax": {
             "title": "27 years\nBig ideas",
             "description": "Ideas that are executed with meaning.\nCampaigns, experiences and strategies that generate real impact and leave a mark on the industry.",

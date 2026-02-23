@@ -65,6 +65,82 @@ export const fr = {
                 "brazil": "BRÉSIL"
             }
         },
+        "premios": {
+            "nav": {
+                "costos": "Coûts des répliques",
+                "medios": "Moyens de Paiement",
+                "envio": "Expédition des répliques"
+            },
+            "hero": {
+                "title": "Prix / Répliques",
+                "btnEs": "Formulaire de commande de répliques - espagnol",
+                "btnPt": "Formulaire de commande de répliques - Portugais"
+            },
+            "items": {
+                "agency": {
+                    "title": "AGENCE DE L'ANNÉE",
+                    "desc": "Trophée extraordinaire, une véritable pièce artistique, avec l'image stylisée du FIP, plaque bleue mise en évidence sur la base.",
+                    "price": "550 US/€"
+                },
+                "brand": {
+                    "title": "MARQUE DE L'ANNÉE",
+                    "desc": "À la demande des gagnants qui nécessitent une deuxième plaque, précisant la catégorie et l'action, ou le prix spécial obtenu, plus un diplôme encadré dans la boîte \"FIP FESTIVALS\"",
+                    "price": "345 US/€"
+                },
+                "grandPrix": {
+                    "title": "GRAND PRIX",
+                    "desc": "Trophée extraordinaire avec structure et base en acrylique, avec textes pyrogravés en bas-relief. Il a un biseau latéral sur le corps et la base.",
+                    "price": "420 US/€"
+                },
+                "oro": {
+                    "title": "FIP D'OR",
+                    "desc": "Statuette en aluminium moulé avec placage d'or. Sur le devant de sa conception les lauriers et le soleil, ceux-ci proviennent de l'écusson national de la République argentine, au dos une carte du monde en relief. La légende de l'année gravée sur la plaque.",
+                    "price": "380 US/€"
+                },
+                "plata": {
+                    "title": "FIP D'ARGENT",
+                    "desc": "Statuette en aluminium moulé avec placage d'argent. Sur le devant de sa conception les lauriers et le soleil, ceux-ci proviennent de l'écusson national de la République argentine, au dos une carte du monde en relief. La légende de l'année gravée sur la plaque.",
+                    "price": "380 US/€"
+                },
+                "bronce": {
+                    "title": "FIP DE BRONZE",
+                    "desc": "L'original est un diplôme et une statuette peut être demandée",
+                    "price": "350 US/€"
+                }
+            },
+            "costos": {
+                "intro": {
+                    "part1": "Pour acquérir des répliques des prix FIP, le participant doit",
+                    "link": "télécharger le formulaire d'achat",
+                    "part2": "le remplir et l'envoyer par e-mail à:"
+                },
+                "important": {
+                    "title": "IMPORTANT",
+                    "p1": "En raison des alternatives de la politique monétaire de la Réserve fédérale et de la Banque centrale européenne, les prix des répliques énumérés sont en dollars pour la région latino-américaine et en euros pour la région européenne, comme il correspond à leurs devises de change régionales.",
+                    "p2Bold": "Ils n'incluent pas les frais d'emballage et d'expédition, ni les taxes de nationalisation douanière.",
+                    "p2Text": "Ces derniers sont à la charge du participant"
+                }
+            },
+            "payment": {
+                "title": "Moyens de paiement",
+                "argentina": {
+                    "title": "Argentine",
+                    "desc": "Paiements par cartes de crédit. En cas de paiements par cartes de crédit, les 21% correspondants (TVA) seront ajoutés."
+                },
+                "international": {
+                    "title": "Paiements internationaux inférieurs à 1000 US/€",
+                    "desc": "Pour les virements inférieurs à 1000 U$/€ les candidats doivent consulter les options de paiement au FIP. Dans le cas d'envois de fonds, les frais d'opération sont à la charge de l'acheteur"
+                },
+                "paypal": {
+                    "title": "Recouvrements avec le système PayPal",
+                    "desc": "FIP opère avec le système PayPal. Il le fait en envoyant un lien de paiement qui expire le 3ème jour et doit être renouvelé. Il est précisé que ce système NE FONCTIONNE PAS avec des cartes d'entreprise. Consultez FIP si le paiement est en Euros en raison d'une règle Fiscale spéciale en Argentine"
+                },
+                "others": {
+                    "title": "Autres modes de paiement",
+                    "desc": "Concernant les taxes locales et leur traitement dans le pays d'origine. Le participant doit payer le montant exact de la facture. Le Festival ne reconnaîtra aucune déduction attribuable aux taxes locales du pays d'origine d'où ils s'inscrivent au FIP"
+                }
+            }
+        },
         "parallax": {
             "title": "27 ans\nGrandes idées",
             "description": "Des idées exécutées avec sens.\nCampagnes, expériences et stratégies qui génèrent un impact réel et laissent leur marque dans l'industrie.",

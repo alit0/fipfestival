@@ -65,6 +65,82 @@ export const pt = {
                 "brazil": "BRASIL"
             }
         },
+        "premios": {
+            "nav": {
+                "costos": "Custos de réplicas",
+                "medios": "Meios de Pagamento",
+                "envio": "Envio de réplicas"
+            },
+            "hero": {
+                "title": "Prêmios",
+                "btnEs": "Formulário de pedido de réplicas - espanhol",
+                "btnPt": "Formulário de pedido de réplicas - Português"
+            },
+            "items": {
+                "agency": {
+                    "title": "AGÊNCIA DO ANO",
+                    "desc": "Troféu extraordinário, uma verdadeira peça artística, com imagem estilizada do FIP, placa azul em destaque na base.",
+                    "price": "550 US/€"
+                },
+                "brand": {
+                    "title": "MARCA DO ANO",
+                    "desc": "A pedido dos vencedores que precisem de uma segunda plaquinha, especificando a categoria e a ação, ou o prêmio especial obtido, mais um diploma emoldurado na caixa “FIP FESTIVALS”",
+                    "price": "345 US/€"
+                },
+                "grandPrix": {
+                    "title": "GRAND PRIX",
+                    "desc": "Troféu extraordinário com estrutura e base de acrílico, com pirografia de textos em baixo relevo. Possui um chanfro lateral no corpo e na base.",
+                    "price": "420 US/€"
+                },
+                "oro": {
+                    "title": "FIP DE OURO",
+                    "desc": "Estatueta de alumínio fundido com banho de ouro. Na frente de seu design os louros e o sol, estes vêm do brasão da República Argentina, no verso um mapa-múndi em relevo. A lenda do ano gravada na placa.",
+                    "price": "380 US/€"
+                },
+                "plata": {
+                    "title": "FIP DE PRATA",
+                    "desc": "Estatueta de alumínio fundido com banho de prata. Na frente de seu design os louros e o sol, estes vêm do brasão da República Argentina, no verso um mapa-múndi em relevo. A lenda do ano gravada na placa.",
+                    "price": "380 US/€"
+                },
+                "bronce": {
+                    "title": "FIP DE BRONZE",
+                    "desc": "O original é um diploma e pode ser solicitada uma estatueta",
+                    "price": "350 US/€"
+                }
+            },
+            "costos": {
+                "intro": {
+                    "part1": "Para adquirir réplicas de prêmios do FIP, o participante deve",
+                    "link": "baixar o formulário de compra",
+                    "part2": "preenchê-lo e enviá-lo por e-mail para:"
+                },
+                "important": {
+                    "title": "IMPORTANTE",
+                    "p1": "Devido às alternativas das políticas monetárias da Reserva Federal e do Banco Central Europeu, os preços de réplicas que são enunciados são em dólares para a região latino-americana e em euros para a região europeia, como corresponde às suas moedas regionais de câmbio.",
+                    "p2Bold": "Não incluem custos de embalagem e envio nem de impostos por nacionalização aduaneira.",
+                    "p2Text": "Estes últimos são de responsabilidade do participante"
+                }
+            },
+            "payment": {
+                "title": "Meios de pagamento",
+                "argentina": {
+                    "title": "Argentina",
+                    "desc": "Pagamentos com cartões de crédito. Em caso de pagamentos com cartões de crédito, será adicionado o correspondente 21% (IVA)."
+                },
+                "international": {
+                    "title": "Pagamentos internacionais menores a 1000 US/€",
+                    "desc": "Para transferências menores que 1000 U$/€ os solicitantes deverão consultar as opções de pagamento ao FIP. No caso de remessas de dinheiro, as despesas da operação são de responsabilidade do comprador"
+                },
+                "paypal": {
+                    "title": "Cobranças com o sistema PayPal",
+                    "desc": "O FIP opera com o sistema PayPal. Ele faz isso enviando um link de pagamento que expira no 3º dia e deverá ser renovado. Esclarece-se que este sistema NÃO OPERA com cartões corporativos. Consultar o FIP se o pagamento for em Euros por existir uma regra Fiscal especial na Argentina"
+                },
+                "others": {
+                    "title": "Outras formas de pagamento",
+                    "desc": "Sobre os impostos locais e seu tratamento no país de origem. O participante deve pagar o valor exato da fatura. O Festival não reconhecerá nenhuma dedução atribuível a impostos locais do país de origem a partir de onde se inscreva no FIP"
+                }
+            }
+        },
         "parallax": {
             "title": "27 anos\nGrandes ideias",
             "description": "Ideias executadas com sentido.\nCampanhas, experiências e estratégias que geram impacto real e deixam sua marca na indústria.",

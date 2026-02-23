@@ -65,6 +65,82 @@ export const es = {
                 "brazil": "BRASIL"
             }
         },
+        "premios": {
+            "nav": {
+                "costos": "Costos de réplicas",
+                "medios": "Medios de Pago",
+                "envio": "Envío de réplicas"
+            },
+            "hero": {
+                "title": "Premios",
+                "btnEs": "Formulario pedido de replicas - español",
+                "btnPt": "Formulario pedido de replicas - Portugues"
+            },
+            "items": {
+                "agency": {
+                    "title": "AGENCIA DEL AÑO",
+                    "desc": "Extraordinario trofeo, una verdadera pieza artística, con imagen estilizada del FIP, destacada chapa de color azul en la base.",
+                    "price": "550 US/€"
+                },
+                "brand": {
+                    "title": "MARCA DEL AÑO",
+                    "desc": "A pedido de los ganadores que requieran una segunda chapita, especificando la categoría y la acción, o el premio especial obtenido, más un diploma enmarcado en caja “FIP FESTIVALS”",
+                    "price": "345 US/€"
+                },
+                "grandPrix": {
+                    "title": "GRAN PRIX",
+                    "desc": "Extraordinario trofeo con estructura y pie de acrílico, con pirografia de textos en bajo relieve. Posee un biselado lateral en el cuerpo y la base.",
+                    "price": "420 US/€"
+                },
+                "oro": {
+                    "title": "FIP DE ORO",
+                    "desc": "Estatuilla de aluminio fundido con Baño oro. En el frente de su diseño los laureles y el sol, estos provienen del escudo Nacional de la Republica Argentina, en el dorso un mapa mundi en relieve. La leyenda del año grabada en la chapa.",
+                    "price": "380 US/€"
+                },
+                "plata": {
+                    "title": "FIP DE PLATA",
+                    "desc": "Estatuilla de aluminio fundido con Baño plata. En el frente de su diseño los laureles y el sol, estos provienen del escudo Nacional de la Republica Argentina, en el dorso un mapa mundi en relieve. La leyenda del año grabada en la chapa.",
+                    "price": "380 US/€"
+                },
+                "bronce": {
+                    "title": "FIP DE BRONCE",
+                    "desc": "El original es un diploma y puede solicitarse una estatuilla",
+                    "price": "350 US/€"
+                }
+            },
+            "costos": {
+                "intro": {
+                    "part1": "Para adquirir replicas de premios del FIP, el participante debe",
+                    "link": "descargar el formulario de compra",
+                    "part2": "completarlo y enviarlo por e-mail a:"
+                },
+                "important": {
+                    "title": "IMPORTANTE",
+                    "p1": "Debido a las alternativas de las políticas monetarias de la Reserva Federal y del Banco Central Europeo, los precios de réplicas que se enuncian son en dólares para la región latinoamericana y en euros para la región europea, tal como corresponde a sus monedas regionales de intercambio.",
+                    "p2Bold": "No incluyen gastos de embalaje y envío ni de impuestos por nacionalización aduanera.",
+                    "p2Text": "Estos últimos están a cargo del participante"
+                }
+            },
+            "payment": {
+                "title": "Medios de pago",
+                "argentina": {
+                    "title": "Argentina",
+                    "desc": "Pagos con tarjetas de crédito. En caso de pagos con tarjetas de crédito, se adicionará el 21% (IVA) correspondiente."
+                },
+                "international": {
+                    "title": "Pagos internacionales menores a 1000 US/€",
+                    "desc": "Para giros menores a 1000 U$/€ los solicitantes deberán consular las opciones de pago al FIP. En el caso de remesas de dinero los gastos de la operación están a cargo del comprador"
+                },
+                "paypal": {
+                    "title": "Cobros con sistema PayPal",
+                    "desc": "El FIP opera con el sistema Pay Pal. Lo hace enviando un link de pagos que se vence al 3er dia y deberá renovarseSe aclara que este sistema NO OPERA con tarjetas corporativas. Consultar al FIP si es pago en Euros por existir una norma Fiscal especial en Argentina"
+                },
+                "others": {
+                    "title": "Otras formas de pago",
+                    "desc": "Sobre los impuestos locales y su tratamiento en país de origen. El participante deberá pagar el importe exacto de la factura. El Festival no reconocerá ninguna deducción atribuible a impuestos locales del país de origen desde donde se inscriba al FIP"
+                }
+            }
+        },
         "parallax": {
             "title": "27 años\nGrandes ideas",
             "description": "Ideas que se ejecutan con sentido.\nCampañas, experiencias y estrategias que generan impacto real y dejan huella en la industria.",

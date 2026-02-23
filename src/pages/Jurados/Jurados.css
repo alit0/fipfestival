@@ -1,5 +1,5 @@
 .jurados-page {
-    padding: 60px 0;
+    padding: 140px 0;
     min-height: 100vh;
     background-color: var(--color-bg);
 }
@@ -237,8 +237,18 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 1350px) {
+    .jurados-page {
+        padding-top: 180px;
+    }
+}
+
 /* --- Responsive (Mobile & Tablets) --- */
 @media (max-width: 900px) {
+    .jurados-page {
+        padding-top: 80px;
+    }
+
     .jurados-container {
         padding: 0 20px;
     }

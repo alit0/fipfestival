@@ -10,6 +10,7 @@ const Categorias = React.lazy(() => import('./pages/Categorias/Categorias'));
 const Fechas = React.lazy(() => import('./pages/Fechas/Fechas'));
 const Tarifario = React.lazy(() => import('./pages/Tarifario/Tarifario'));
 const Jurados = React.lazy(() => import('./pages/Jurados/Jurados'));
+const Premios = React.lazy(() => import('./pages/Premios/Premios'));
 
 // Lazy load Footer
 const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
@@ -40,6 +41,11 @@ function App() {
           <Route path="/jurados" element={
             <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
               <Jurados />
+            </React.Suspense>
+          } />
+          <Route path="/premios" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <Premios />
             </React.Suspense>
           } />
         </Routes>

@@ -73,8 +73,7 @@ export const it = {
             },
             "hero": {
                 "title": "Premi / Repliche",
-                "btnEs": "Modulo d'ordine repliche - spagnolo",
-                "btnPt": "Modulo d'ordine repliche - portoghese"
+                "btnForm": "Modulo d'ordine repliche - Italiano"
             },
             "items": {
                 "agency": {

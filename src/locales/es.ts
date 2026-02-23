@@ -73,8 +73,7 @@ export const es = {
             },
             "hero": {
                 "title": "Premios",
-                "btnEs": "Formulario pedido de replicas - español",
-                "btnPt": "Formulario pedido de replicas - Portugues"
+                "btnForm": "Formulario pedido de replicas - Español"
             },
             "items": {
                 "agency": {

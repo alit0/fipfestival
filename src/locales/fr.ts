@@ -73,8 +73,7 @@ export const fr = {
             },
             "hero": {
                 "title": "Prix / Répliques",
-                "btnEs": "Formulaire de commande de répliques - espagnol",
-                "btnPt": "Formulaire de commande de répliques - Portugais"
+                "btnForm": "Formulaire de commande de répliques - Français"
             },
             "items": {
                 "agency": {

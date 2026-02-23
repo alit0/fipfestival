@@ -73,8 +73,7 @@ export const en = {
             },
             "hero": {
                 "title": "Awards / Replicas",
-                "btnEs": "Replica order form - Spanish",
-                "btnPt": "Replica order form - Portuguese"
+                "btnForm": "Replica order form - English"
             },
             "items": {
                 "agency": {

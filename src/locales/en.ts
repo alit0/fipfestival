@@ -52,7 +52,10 @@ export const en = {
         },
         "jury": {
             "title": "International Jury",
-            "role": "MULTI-LINE ROLE DESCRIPTION",
+            "pageTitle": "Judges",
+            "thumbnailRole": "MULTI-LINE ROLE",
+            "founderRole": "Founding Partner",
+            "bioText": "He holds a Bachelor of Arts in Business Studies in Marketing from the University of Exeter, and an MBA-Executive and PADE from ICAI-ICADE at the Pontifical University of Comillas. Certified in management programs from MIT Boston. His extensive career is backed by the various positions he has held: marketing director, commercial manager, general manager in competitive sectors such as food, beverages, health, and industry. His wealth of knowledge led him to found TSMGO | The show must go on.",
             "countries": {
                 "argentina": "ARGENTINA",
                 "colombia": "COLOMBIA",

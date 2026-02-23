@@ -6,7 +6,7 @@ import LazySection from '../../components/common/LazySection';
 // Lazy load components
 const FipNews = React.lazy(() => import('../../components/layout/FipNews/FipNews'));
 const FipRubros = React.lazy(() => import('../../components/layout/FipRubros/FipRubros'));
-const FipJury = React.lazy(() => import('../../components/layout/FipJury/FipJury'));
+
 const FipParallax = React.lazy(() => import('../../components/layout/FipParallax/FipParallax'));
 const FipRankings = React.lazy(() => import('../../components/layout/FipRankings/FipRankings'));
 const FipWinningCases = React.lazy(() => import('../../components/layout/FipWinningCases/FipWinningCases'));
@@ -29,9 +29,7 @@ const Home: React.FC = () => {
                 <FipRubros />
             </LazySection>
 
-            <LazySection>
-                <FipJury />
-            </LazySection>
+
 
             <LazySection>
                 <FipParallax />

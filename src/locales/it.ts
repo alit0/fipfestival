@@ -52,7 +52,10 @@ export const it = {
         },
         "jury": {
             "title": "Giuria Internazionale",
-            "role": "DESCRIZIONE DEL RUOLO IN PIÙ RIGHE",
+            "pageTitle": "Giudici",
+            "thumbnailRole": "DESCRIZIONE DEL RUOLO",
+            "founderRole": "Socio Fondatore",
+            "bioText": "Ha conseguito un Bachelor of Arts in Business Studies in Marketing presso l'Università di Exeter, un MBA-Executive e un PADE presso l'ICAI-ICADE dell'Università Pontificia di Comillas. Certificato in programmi dirigenziali dal MIT di Boston. La sua vasta carriera è sostenuta dalle diverse posizioni che ha ricoperto: direttore marketing, direttore commerciale, direttore generale in settori competitivi come alimentare, bevande, salute e industria. Il suo bagaglio di conoscenze lo ha portato a fondare TSMGO | Lo spettacolo deve continuare.",
             "countries": {
                 "argentina": "ARGENTINA",
                 "colombia": "COLOMBIA",

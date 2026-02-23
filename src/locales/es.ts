@@ -52,7 +52,10 @@ export const es = {
         },
         "jury": {
             "title": "Jurado internacional",
-            "role": "CARGO DE VARIAS LINEAS",
+            "pageTitle": "Jurados",
+            "thumbnailRole": "CARGO DE VARIAS LINEAS",
+            "founderRole": "Socio Fundador",
+            "bioText": "Es Bachelor of Arts in Business Studies en Marketing por la Universidad de Exeter, MBA-Executive y PADE por ICAI-ICADE de la Universidad Pontificia de Comillas. Certificado en programas directivos del MIT de Boston. Su amplia carrera la respaldan las distintas posiciones que ha ocupado: director de marketing, gerente comercial, director general en sectores tan diversos y competitivos como el de la alimentación, bebidas, salud e industrial. Su cúmulo de conocimientos lo llevó a fundar TSMGO | The show must go on.",
             "countries": {
                 "argentina": "ARGENTINA",
                 "colombia": "COLOMBIA",

@@ -95,7 +95,7 @@
 }
 
 .price-item {
-    background-color: #f7f2ff;
+    background-color: #F5F1FD;
     padding: 25px 20px;
     border-radius: 4px;
     display: flex;
@@ -137,7 +137,7 @@
 
 .fee-info {
     flex: 2;
-    background-color: #f5f5f5;
+    background-color: #EFEFEF;
     padding: 30px;
     border-radius: 4px;
     color: #1a1a1a;
@@ -177,7 +177,7 @@
 
 .fee-price {
     flex: 1;
-    background-color: #f5f5f5;
+    background-color: #EFEFEF;
     padding: 30px;
     border-radius: 4px;
     display: flex;

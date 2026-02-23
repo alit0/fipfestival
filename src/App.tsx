@@ -11,6 +11,8 @@ const Fechas = React.lazy(() => import('./pages/Fechas/Fechas'));
 const Tarifario = React.lazy(() => import('./pages/Tarifario/Tarifario'));
 const Jurados = React.lazy(() => import('./pages/Jurados/Jurados'));
 const Premios = React.lazy(() => import('./pages/Premios/Premios'));
+const Inscripcion = React.lazy(() => import('./pages/Inscripcion/Inscripcion'));
+const HallFama = React.lazy(() => import('./pages/HallFama/HallFama'));
 
 // Lazy load Footer
 const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
@@ -46,6 +48,16 @@ function App() {
           <Route path="/premios" element={
             <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
               <Premios />
+            </React.Suspense>
+          } />
+          <Route path="/inscripcion" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <Inscripcion />
+            </React.Suspense>
+          } />
+          <Route path="/hall" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <HallFama />
             </React.Suspense>
           } />
         </Routes>

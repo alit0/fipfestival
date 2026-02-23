@@ -162,11 +162,8 @@ const Premios: React.FC = () => {
                     </div>
 
                     <div className="hero-action-buttons">
-                        <a href="#form-es" className="btn-primary-dark">
-                            {t('premios.hero.btnEs')} <FaArrowDown className="btn-icon" />
-                        </a>
-                        <a href="#form-pt" className="btn-primary-dark">
-                            {t('premios.hero.btnPt')} <FaArrowDown className="btn-icon" />
+                        <a href="#descargar" className="btn-primary-dark">
+                            {t('premios.hero.btnForm')} <FaArrowDown className="btn-icon" />
                         </a>
                     </div>
                 </div>

@@ -235,6 +235,144 @@ export const fr = {
                 "label": "Important:",
                 "text": "Pour chaque catégorie présentée, 1 inscription est considérée. Si une même campagne est présentée dans plusieurs catégories, chacune le fait de manière indépendante et paie un tarif pour chacune d'elles, c'est-à-dire : 1 inscription = 1 tarif, qu'il s'agisse ou non de la même action"
             }
+        },
+        "inscripcion": {
+            "title": "Inscription",
+            "btnForm": "Formulaire d'inscription - français",
+            "btnDownloadForm": "Formulaire d'inscription",
+            "btnDownloadModel": "Modèle de présentation",
+            "steps": {
+                "1": {
+                    "label": "Étape 1",
+                    "short": "Remplir et envoyer le formulaire d'inscription",
+                    "title": "Remplir et envoyer le formulaire d'inscription",
+                    "bullet1": "Téléchargez le formulaire d'inscription (PDF).",
+                    "bullet2": "Remplir avec les données requises.",
+                    "bullet3": "Demandez-la par courrier électronique à l'adresse info@fipfestival.com.ar",
+                    "bullet4": "Après le paiement vous recevrez votre identifiant et mot de passe pour continuer.",
+                    "bullet5": "Vous pouvez inscrire plusieurs catégories en utilisant d'un seul formulaire (en y indiquant chaque code de catégorie)."
+                },
+                "2": {
+                    "label": "Étape 2",
+                    "short": "Préparer la présentation de chaque campagne",
+                    "title": "Créer la présentation de chaque campagne",
+                    "bullet1": "Déchargez le modèle de la présentation.",
+                    "bullet2": "La présentation est limitée à 30 pages (25 recommandés).",
+                    "bullet3": "Saisissez le link pour le video de campagne au dèrniere page"
+                },
+                "3": {
+                    "label": "Étape 3",
+                    "short": "Téléchargez vos campagnes au système en ligne",
+                    "title": "Téléchargez vos campagnes au système en ligne",
+                    "bullet1": "Entrez dans “Acesso aux l'Agences” avec son identifiant et son mot de passe.",
+                    "bullet2": "Remplir:",
+                    "bullet2a": "Nom de la campagne",
+                    "bullet2b": "Compagnie",
+                    "bullet2c": "Description (facultative)",
+                    "bullet3": "Sélectionnez les catégories pour chaque campagne présentée.",
+                    "bullet4": "Anex la présentation (sans dépasser la limite de pages).",
+                    "bullet5": "Les pages vers des sites en ligne et d'autres vidéos peuvent être annexées et ne doivent pas excéder 35 MB.",
+                    "bullet6": "Immédiatement la campagne se trouvera officiellement inscrite."
+                },
+                "4": {
+                    "label": "Étape 4",
+                    "short": "Envoi d'images",
+                    "bullet3": "Cette image c'est cette qu'on utilisera por conformer la exposition du FIP et les exposiciotns itinerants."
+                }
+            },
+            "conditions": {
+                "title": "Conditions Générales",
+                "text": "Dans le cas où un membre du jury informe au Comité Exécutive de FIP qu'une campagne inscrita n'apparaît pas sur les listes officiels distribuées selon l'ordre du festival aux membres du jury,  On prendra l'exécution de ces sanctions qui comporteront ce telles mesures : ne pas tenir compte d'une tel inscription on ajoutant des amends à une égale somme à la sanction. Et si la même chose se renouvellait (avec de deux ou plusieurs pieces de travail irrégulièrement inscrites des cession du mot de passe) on éliminera automatiquement toutes les pièces inscrites par ce l'entreprise on tenant compte qu'il s'agit d'une infraction très grave. L'entreprise ne receivra aucune compensation de tout façon des remboursement"
+            }
+        },
+        "hallFama": {
+            "title": "Panthéon (Hall of Fame)",
+            "roles": {
+                "multiLine": "RÔLE SUR PLUSIEURS\nLIGNES",
+                "founder": "Associé Fondateur"
+            },
+            "rulesTitle": "FIP HALL OF FAME",
+            "rules": {
+                "1": {
+                    "title": "CE QU'IL EST — CE QU'IL CHERCHE À CONSACRER",
+                    "p1": "Le FIP Hall of Fame est né pour rendre hommage aux personnalités qui ont marqué l'histoire du Marketing, de la Communication et de l'Événementiel au niveau international.",
+                    "p2": "C'est un espace de consécration.",
+                    "p3": "Il reconnaît les carrières exceptionnelles, les idées qui ont transformé l'industrie et les figures qui ont élevé les normes professionnelles dans la région.",
+                    "p4": "Le Hall honore ceux qui ont atteint l'excellence soutenue au fil du temps :",
+                    "li1": "Créatifs récompensés à de multiples éditions.",
+                    "li2": "Pionniers qui ont pris des risques lorsque le contexte n'était pas favorable.",
+                    "li3": "Fondateurs, enseignants et référents qui ont bâti une structure et une vision.",
+                    "p5": "Être intégré au FIP Hall of Fame implique une distinction définitive dans l'activité."
+                },
+                "2": {
+                    "title": "PRINCIPES ET FONDEMENTS",
+                    "p1": "Le Hall of Fame a été enregistré le 15 février 2015, à la suite d'un processus d'analyse sur le besoin de reconnaître les trajectoires remarquables dans la région (y compris l'Espagne et le Portugal).",
+                    "p2": "Pendant des décennies, l'industrie a récompensé des campagnes et des résultats.",
+                    "p3": "Il manquait une instance qui consacrerait des personnes, des marques et des référents dont la contribution dépassait un prix ponctuel.",
+                    "p4": "Le FIP Hall of Fame remplit cette fonction testimoniale et symbolique.",
+                    "p5": "Il reconnaît :",
+                    "li1": "Des professionnels exceptionnels.",
+                    "li2": "Des fondateurs et pionniers.",
+                    "li3": "Des marques avec des performances exceptionnelles.",
+                    "li4": "Des médias spécialisés.",
+                    "li5": "Des enseignants et des établissements de formation.",
+                    "p6": "Son objectif est de consolider une référence permanente d'excellence."
+                },
+                "3": {
+                    "title": "CRITÈRES DE CANDIDATURES",
+                    "p1": "L'analyse fondatrice partait d'une réalité régionale : il y a de véritables protagonistes qui, même dans des contextes complexes, ont développé des idées extraordinaires et généré un impact réel.",
+                    "p2": "On a particulièrement pris en compte :",
+                    "li1": "Une trajectoire professionnelle soutenue.",
+                    "li2": "L'innovation et l'influence dans l'industrie.",
+                    "li3": "Contribution structurelle au développement du marketing et de l'événementiel.",
+                    "li4": "L'héritage formatif ou institutionnel."
+                },
+                "4": {
+                    "title": "JURY DE DÉSIGNATION — NOMINATIONS",
+                    "p1": "Le FIP a défini un jury mixte, composé de personnalités actives et de référents à la retraite, sur une base tournante.",
+                    "p2": "Ce système garantit :",
+                    "li1": "La transparence.",
+                    "li2": "La pluralité des critères.",
+                    "li3": "Un débat professionnel.",
+                    "li4": "La neutralité des nominations.",
+                    "p3": "Le renouvellement périodique du jury assure l'indépendance et l'équilibre."
+                },
+                "5": {
+                    "title": "FUTURS CRITÈRES — NOUVEAUX ENTRANT",
+                    "p1": "Dans sa phase initiale, les fondateurs du FIP ont désigné les premiers membres, privilégiant des personnalités incontestables pour établir la norme d'excellence.",
+                    "p2": "Désormais, le Hall continuera de s'étendre sur la base de critères de trajectoire, de mérite et d'influence démontrable.",
+                    "p3": "L'objectif est de consolider des archives vivantes de l'excellence professionnelle."
+                },
+                "6": {
+                    "title": "DISTINCTION POUR LES MEMBRES",
+                    "p1": "Ceux qui entrent au Hall of Fame reçoivent :",
+                    "li1": "Certificat officiel.",
+                    "li2": "Médaille commémorative.",
+                    "li3": "Inclusion permanente sur le site institutionnel.",
+                    "li4": "Présence dans les communications et réseaux du Hall.",
+                    "li5": "Statuette commémorative (prévue).",
+                    "p2": "Au-delà des éléments physiques, la véritable distinction est la consécration publique de leur héritage."
+                },
+                "7": {
+                    "title": "LE PRESTIGE QUI SOUTIENT LE FIP",
+                    "p1": "Le FIP a plus de 25 ans de trajectoire continue, avec des jurés de multiples pays en Europe, Afrique, Asie et Amérique.",
+                    "p2": "Son histoire et sa transparence institutionnelle soutiennent la légitimité du Hall of Fame."
+                },
+                "8": {
+                    "title": "L'ICÔNE DU HALL",
+                    "p1": "Le symbole du Hall of Fame a été conçu par Diego de la Vega, fondateur du Festival et créateur du nom et du premier logo FIP."
+                },
+                "9": {
+                    "title": "FONCTIONNEMENT ET PROPOSITIONS",
+                    "sub1": "Ambassadeurs",
+                    "p1": "Le FIP aspire à avoir des ambassadeurs par pays, qui proposeront des listes restreintes de candidats et soumettront des nominations au Hall.",
+                    "sub2": "Agences et Marques",
+                    "p2": "Les agences peuvent proposer des candidats liés aux marques, avec des antécédents et des réalisations documentées.",
+                    "sub3": "Désignations Directes",
+                    "p3": "Le Hall of Fame pourra intégrer directement les marques qui ont démontré une performance exceptionnelle et continue lors des différentes éditions du Festival."
+                }
+            },
+            "bioText": "Il est titulaire d'un Bachelor of Arts in Business Studies en Marketing de l'Université d'Exeter, d'un MBA-Executive et d'un PADE de l'ICAI-ICADE de l'Université Pontificale de Comillas. Certifié en programmes exécutifs au MIT à Boston. Sa vaste carrière est soutenue par les différentes fonctions qu'il a occupées : directeur marketing, directeur commercial, directeur général dans des secteurs aussi divers et compétitifs que l'alimentation, les boissons, la santé et l'industrie. Son bagage de connaissances l'a amené à fonder TSMGO | The show must go on."
         }
     }
 };

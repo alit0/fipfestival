@@ -1,0 +1,314 @@
+.inscripcion-page {
+    padding: 180px 5% 80px;
+    /* Offset for fixed header */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: inherit;
+}
+
+/* Base text color for bullets and general text */
+.inscripcion-page p,
+.inscripcion-page li {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Section */
+.inscripcion-header {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.inscripcion-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+/* Horizontal Timeline */
+.horizontal-timeline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-connector {
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-color, #ccc);
+    margin-top: 25px;
+    /* Aligns with middle of circle */
+    z-index: 1;
+}
+
+/* Step Circles */
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-color-alt);
+    border: 3px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.step-circle .inner-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.step-circle.active {
+    background-color: var(--bg-color);
+    /* Lightest bg */
+}
+
+.step-circle.active .inner-dot {
+    background-color: var(--bg-color-alt);
+    border: 4px solid var(--primary-color);
+    /* Hollow dot look */
+}
+
+/* Adjust timeline colors for dark mode */
+[data-theme='dark'] .step-circle {
+    background-color: var(--primary-color);
+}
+
+[data-theme='dark'] .step-circle .inner-dot {
+    background-color: var(--bg-color);
+}
+
+[data-theme='dark'] .step-circle.active {
+    background-color: var(--bg-color-alt);
+}
+
+[data-theme='dark'] .step-circle.active .inner-dot {
+    border: 4px solid var(--primary-color);
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    margin: 0;
+    padding-right: 15px;
+}
+
+/* Actions */
+.inscripcion-actions {
+    margin-top: 20px;
+}
+
+/* Vertical Timeline Layout */
+.vertical-timeline-container {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    padding-left: 50px;
+    /* Space for the line */
+    margin-bottom: 80px;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 24px;
+    /* Center of the 50px circle, taking padding into account */
+    top: 50px;
+    bottom: 50px;
+    width: 1px;
+    background-color: var(--border-color, #ccc);
+    z-index: 1;
+}
+
+.v-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.v-step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 30px;
+    position: absolute;
+    left: -50px;
+}
+
+.v-step-circle .inner-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+
+.v-step-circle.active {
+    background-color: var(--bg-color-alt);
+    border: 3px solid var(--primary-color);
+}
+
+.v-step-circle.active .inner-dot {
+    background-color: var(--text-color);
+}
+
+.v-step-content {
+    background-color: transparent;
+    width: 100%;
+}
+
+.v-step-content h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.v-step-content h4 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.v-step-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.v-step-content li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.v-step-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Secondary Lists inside steps */
+.v-step-content ul ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+    list-style-type: circle;
+}
+
+/* Small Download Buttons */
+.btn-download-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--surface-color);
+    color: var(--text-color) !important;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-download-small:hover {
+    background-color: var(--border-color);
+}
+
+/* Conditions Footer */
+.inscripcion-conditions {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.inscripcion-conditions h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.inscripcion-conditions p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .horizontal-timeline {
+        display: none;
+        /* Hide horizontal timeline on smaller screens */
+    }
+
+    .inscripcion-actions {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .inscripcion-title {
+        font-size: 2.5rem;
+    }
+
+    .vertical-timeline-container {
+        padding-left: 40px;
+    }
+
+    .vertical-line {
+        left: 20px;
+    }
+
+    .v-step-circle {
+        width: 40px;
+        height: 40px;
+        left: -40px;
+        margin-right: 20px;
+    }
+
+    .v-step-circle .inner-dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .inscripcion-page {
+        padding: 140px 5% 60px;
+    }
+}

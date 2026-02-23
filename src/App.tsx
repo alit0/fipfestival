@@ -8,6 +8,7 @@ import Reglamento from './pages/Reglamento/Reglamento';
 // Lazy load pages
 const Categorias = React.lazy(() => import('./pages/Categorias/Categorias'));
 const Fechas = React.lazy(() => import('./pages/Fechas/Fechas'));
+const Tarifario = React.lazy(() => import('./pages/Tarifario/Tarifario'));
 
 // Lazy load Footer
 const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
@@ -28,6 +29,11 @@ function App() {
           <Route path="/fechas" element={
             <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
               <Fechas />
+            </React.Suspense>
+          } />
+          <Route path="/tarifario" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <Tarifario />
             </React.Suspense>
           } />
         </Routes>

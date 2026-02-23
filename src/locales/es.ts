@@ -93,6 +93,66 @@ export const es = {
             "categories": "Categorías .pdf"
         },
         "reglamento": reglamentoES,
-        "fechasCierre": fechasCierreES
+        "fechasCierre": fechasCierreES,
+        "tarifario": {
+            "title": "Tarifario",
+            "discounts": {
+                "badge": "Descuentos 2026",
+                "main": {
+                    "value": "25%",
+                    "desc": "de descuento por inscripción anticipada hasta el 30 de marzo 2026. Adicional, el descuento por cantidad"
+                },
+                "sub1": {
+                    "value": "3%",
+                    "desc": "adicional presentando entre 3 a 5 inscripciones"
+                },
+                "sub2": {
+                    "value": "5%",
+                    "desc": "adicional presentando entre 6 a 15 inscripciones"
+                },
+                "sub3": {
+                    "value": "8%",
+                    "desc": "adicional presentando más de 16 inscripciones"
+                }
+            },
+            "base": {
+                "general": {
+                    "label": "GENERAL:",
+                    "amount": "380 US/€"
+                },
+                "marketing": {
+                    "label": "MARKETING PROMOCIONAL:",
+                    "amount": "380 US/€"
+                },
+                "eventos": {
+                    "label": "EVENTOS:",
+                    "amount": "380 US/€"
+                }
+            },
+            "details": {
+                "general": {
+                    "title": "TARIFA GENERAL. PRECIO NETO",
+                    "desc": "Acciones realizadas entre el 1° de Enero del 2025 hasta el 1° de Septiembre 2026.",
+                    "price": "380 US/€"
+                },
+                "agency": {
+                    "title": "AGENCIA DEL AÑO PAÍS",
+                    "desc": "Costo de inscripción como agencia del año país. Se abona un solo arancel por año por agencia participante",
+                    "price": "150 US/€"
+                },
+                "materials": {
+                    "title": "MATERIALES Y MUESTRA DIGITAL",
+                    "desc": "Se abonará un arancel de cinco (5) dólares estadounidenses por cada caso presentado. Dicho importe se aplicará por caso, independientemente de la cantidad de categorías en las que el mismo sea inscripto, correspondiendo un único arancel de cinco dólares por caso.",
+                    "price": "10 US/€"
+                }
+            },
+            "note": {
+                "registration": "Una vez realizado el pago el FIP les enviara un tutorial de cómo deben realizar la inscripción."
+            },
+            "warning": {
+                "label": "Importante:",
+                "text": "por cada categoría presentada se considera 1 inscripción, si se presenta una misma campaña en varias categorías, cada una lo hace en forma independiente y abona por cada una un arancel, es decir: 1 inscripción = 1 arancel independientemente de que sea o no la misma acción"
+            }
+        }
     }
 };

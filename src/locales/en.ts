@@ -97,6 +97,66 @@ export const en = {
             "title": "FIP Rules\n2026",
             "description": "These official rules are composed of their general articles and complementary clarifications.\nOnce the registration form is submitted, all rules are implicitly agreed upon and accepted by the participant."
         },
-        "fechasCierre": fechasCierreEN
+        "fechasCierre": fechasCierreEN,
+        "tarifario": {
+            "title": "Fees",
+            "discounts": {
+                "badge": "Discounts 2026",
+                "main": {
+                    "value": "25%",
+                    "desc": "off for early registration until March 30, 2026. Additionally, quantity discount"
+                },
+                "sub1": {
+                    "value": "3%",
+                    "desc": "additional when presenting between 3 to 5 entries"
+                },
+                "sub2": {
+                    "value": "5%",
+                    "desc": "additional when presenting between 6 to 15 entries"
+                },
+                "sub3": {
+                    "value": "8%",
+                    "desc": "additional when presenting more than 16 entries"
+                }
+            },
+            "base": {
+                "general": {
+                    "label": "GENERAL:",
+                    "amount": "380 US/€"
+                },
+                "marketing": {
+                    "label": "PROMOTIONAL MARKETING:",
+                    "amount": "380 US/€"
+                },
+                "eventos": {
+                    "label": "EVENTS:",
+                    "amount": "380 US/€"
+                }
+            },
+            "details": {
+                "general": {
+                    "title": "GENERAL FEE. NET PRICE",
+                    "desc": "Actions carried out between January 1, 2025, to September 1, 2026.",
+                    "price": "380 US/€"
+                },
+                "agency": {
+                    "title": "AGENCY OF THE YEAR COUNTRY",
+                    "desc": "Registration cost for agency of the year country. Only one fee per year is paid per participating agency",
+                    "price": "150 US/€"
+                },
+                "materials": {
+                    "title": "MATERIALS AND DIGITAL SAMPLE",
+                    "desc": "A fee of five (5) US dollars will be paid for each submitted case. This amount will be applied per case, regardless of the number of categories in which it is registered, corresponding to a single fee of five dollars per case.",
+                    "price": "10 US/€"
+                }
+            },
+            "note": {
+                "registration": "Once the payment is made, the FIP will send you a tutorial on how to complete the registration."
+            },
+            "warning": {
+                "label": "Important:",
+                "text": "For each presented category, 1 registration is considered. If the same campaign is presented in several categories, each one does so independently and pays a fee for each, that is: 1 registration = 1 fee regardless of whether it is the same action or not"
+            }
+        }
     }
 };

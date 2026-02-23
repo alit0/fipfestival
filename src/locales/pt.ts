@@ -97,6 +97,66 @@ export const pt = {
             "title": "Regulamento do FIP\n2026",
             "description": "Este regulamento oficial é composto por seus artigos gerais e esclarecimentos complementares.\nApós o envio do formulário de inscrição, todas as regras são implicitamente acordadas e aceitas pelo participante."
         },
-        "fechasCierre": fechasCierrePT
+        "fechasCierre": fechasCierrePT,
+        "tarifario": {
+            "title": "Tarifas",
+            "discounts": {
+                "badge": "Descontos 2026",
+                "main": {
+                    "value": "25%",
+                    "desc": "de desconto para inscrição antecipada até 30 de março de 2026. Além disso, desconto por quantidade"
+                },
+                "sub1": {
+                    "value": "3%",
+                    "desc": "adicional ao apresentar entre 3 a 5 inscrições"
+                },
+                "sub2": {
+                    "value": "5%",
+                    "desc": "adicional ao apresentar entre 6 a 15 inscrições"
+                },
+                "sub3": {
+                    "value": "8%",
+                    "desc": "adicional ao apresentar mais de 16 inscrições"
+                }
+            },
+            "base": {
+                "general": {
+                    "label": "GERAL:",
+                    "amount": "380 US/€"
+                },
+                "marketing": {
+                    "label": "MARKETING PROMOCIONAL:",
+                    "amount": "380 US/€"
+                },
+                "eventos": {
+                    "label": "EVENTOS:",
+                    "amount": "380 US/€"
+                }
+            },
+            "details": {
+                "general": {
+                    "title": "TARIFA GERAL. PREÇO LÍQUIDO",
+                    "desc": "Ações realizadas entre 1º de Janeiro de 2025 até 1º de Setembro de 2026.",
+                    "price": "380 US/€"
+                },
+                "agency": {
+                    "title": "AGÊNCIA DO ANO PAÍS",
+                    "desc": "Custo de inscrição como agência do ano no país. Paga-se apenas uma taxa por ano por agência participante",
+                    "price": "150 US/€"
+                },
+                "materials": {
+                    "title": "MATERIAIS E AMOSTRA DIGITAL",
+                    "desc": "Será cobrada uma taxa de cinco (5) dólares americanos por cada caso apresentado. Esse valor será aplicado por caso, independentemente da quantidade de categorias nas quais estiver inscrito, correspondendo a uma taxa única de cinco dólares por caso.",
+                    "price": "10 US/€"
+                }
+            },
+            "note": {
+                "registration": "Após a realização do pagamento, o FIP enviará um tutorial de como realizar a inscrição."
+            },
+            "warning": {
+                "label": "Importante:",
+                "text": "Por cada categoria apresentada, considera-se 1 inscrição. Se uma mesma campanha for apresentada em várias categorias, cada uma o faz de forma independente e paga uma taxa por cada uma, ou seja: 1 inscrição = 1 taxa, independentemente de ser ou não a mesma ação"
+            }
+        }
     }
 };

@@ -78,6 +78,15 @@
 
 [data-theme='dark'] .lang-dropdown {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-nav-bg);
+}
+
+[data-theme='dark'] .lang-dropdown li {
+    color: var(--color-text);
+}
+
+[data-theme='dark'] .lang-dropdown li:hover {
+    background-color: var(--color-bg);
 }
 
 [data-theme='dark'] .lang-options button.active {

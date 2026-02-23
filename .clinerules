@@ -1,0 +1,17 @@
+# System Prompts & Core Behavior Directives
+
+## 1. Regla de Inicialización de Tareas
+Para cada nueva petición o tarea solicitada, el Asistente Coder debe realizar como **PRiMER PASO OBLIGATORIO**:
+1. Ejecutar la búsqueda de la skill más adecuada usando el comando de `find-skills` o leyendo el directorio `.agents/Skills/`.
+2. Leer la documentación de la skill correspondiente (`SKILL.md`) antes de empezar a planificar o codificar la solución.
+3. Aplicar estrictamente las directrices de la skill elegida de principio a fin.
+
+## 2. Requerimientos Base para Todo Componente
+Para cualquier código de Interfaz, Vista o Componente nuevo o modificado, el agente **DEBE GARANTIZAR** las siguientes pautas:
+- **Tema Dual**: Implementar y testear obligatoriamente la funcionalidad Claro/Oscuro (`data-theme='dark'` vs `data-theme='light'`).
+- **Responsive Design**: El diseño DEBE verse perfecto y ser adaptable en dispositivos móviles, como mínimo responsivo hasta `1024px`.
+- **Internacionalización (i18n)**: Todo texto en pantalla debe usar el hook `useTranslation` y tener soporte explícito en los 5 idiomas principales (`es`, `en`, `it`, `fr`, `pt`). Absolutamente NINGÚN string quemado (hardcoded) en español en el HTML/TSX.
+
+## 3. Calidad Visual y Entrega
+- **ANTES DE ENTREGAR O NOTIFICAR AL USUARIO**: Revisar detalladamente el diseño. Tiene que verse milimétricamente idéntico a las imágenes, Figma o capturas de referencia aportadas por el Usuario o por diseño UI.
+- **Actitud Profesional**: Ser perfeccionista, detallista y extremadamente profesional al redactar el código y el CSS. Inspeccionar alineaciones, jerarquías de fuentes y tokens de diseño repetidos.

@@ -12,6 +12,30 @@
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --spacing-unit: 8px;
   --header-height: 80px;
+
+  /* CSS Tokens / Design Variables */
+  --color-primary-dark: #290a59;
+  --color-primary-light: #4c3f68;
+  --color-secondary-light: #E2D3F5;
+  --color-primary-muted: #7c6896;
+  --color-primary-border: #BBA3D9;
+  --color-gray-dark: #2a2a2a;
+  --color-gray-medium: #444;
+  --color-gray-light: #cccccc;
+  --color-green: #4CAF50;
+  --color-blue: #4a6ee0;
+  --color-red: #c94f53;
+  --color-purple: #8c52d4;
+  --color-orange: #f77a4a;
+  --color-gold: #c19a6b;
+  --color-success-bg: #e5f5e8;
+  --color-success-text: #0b4f1b;
+  --color-success-dark: #1a4a25;
+  --color-gray-e0: #e0e0e0;
+  --color-gray-333: #333;
+  --color-gray-555: #555;
+  --color-gray-eee: #eee;
+  --color-border-light: #d1d5da;
 }
 
 [data-theme='light'] {

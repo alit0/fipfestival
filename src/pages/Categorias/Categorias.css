@@ -8,7 +8,7 @@
 
 .categorias-title {
     font-size: 3rem;
-    color: #290a59;
+    color: var(--color-primary-dark);
     margin-bottom: 60px;
     font-weight: 800;
     line-height: 1.2;
@@ -48,7 +48,7 @@
 
 .categoria-card-title {
     font-size: 1.1rem;
-    color: #290a59;
+    color: var(--color-primary-dark);
     font-weight: 800;
     margin-bottom: 8px;
     line-height: 1.4;
@@ -60,13 +60,13 @@
 
 .categoria-card-subtitle {
     font-size: 0.9rem;
-    color: #7c6896;
+    color: var(--color-primary-muted);
     font-weight: 400;
     text-transform: uppercase;
 }
 
 [data-theme='dark'] .categoria-card-subtitle {
-    color: #BBA3D9;
+    color: var(--color-primary-border);
 }
 
 .categorias-download-wrapper {
@@ -90,16 +90,16 @@
 }
 
 .categorias-download-btn:hover {
-    background-color: #290a59;
+    background-color: var(--color-primary-dark);
     transform: translateY(-2px);
 }
 
 [data-theme='dark'] .categorias-download-btn {
-    background-color: #4c3f68;
+    background-color: var(--color-primary-light);
 }
 
 [data-theme='dark'] .categorias-download-btn:hover {
-    background-color: #7c6896;
+    background-color: var(--color-primary-muted);
 }
 
 /* Responsive */
@@ -139,7 +139,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #290a59;
+    color: var(--color-primary-dark);
     font-size: 1.4rem;
     font-weight: 800;
     margin-bottom: 16px;
@@ -169,7 +169,7 @@
 }
 
 [data-theme='dark'] .categorias-placeholder-box {
-    background-color: #2a2a2a;
+    background-color: var(--color-gray-dark);
 }
 
 /* Detailed List */
@@ -182,7 +182,7 @@
 }
 
 .categoria-detail-header {
-    color: #290a59;
+    color: var(--color-primary-dark);
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 16px;
@@ -243,7 +243,7 @@
 }
 
 .rubro-title {
-    color: #290a59;
+    color: var(--color-primary-dark);
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 8px;

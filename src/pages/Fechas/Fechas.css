@@ -94,20 +94,20 @@
 }
 
 .green-badge {
-    background-color: #e5f5e8;
-    color: #0b4f1b;
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
 }
 
 .grey-badge {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: var(--color-gray-e0);
+    color: var(--color-gray-333);
 }
 
 /* Textos */
 .card-countries,
 .card-desc {
     font-size: 0.95rem;
-    color: var(--text-muted, #555);
+    color: var(--text-muted, var(--color-gray-555));
     line-height: 1.5;
     margin-bottom: 20px;
     flex-grow: 1;
@@ -127,7 +127,7 @@
 }
 
 .card-btn:hover {
-    background-color: #d1d5da;
+    background-color: var(--color-border-light);
 }
 
 /* Fiesta de premiación dorada/marrón especial */
@@ -152,31 +152,31 @@
 
 /* Bordes Superiores Dinámicos */
 .border-green {
-    border-top-color: #4CAF50;
+    border-top-color: var(--color-green);
 }
 
 .border-blue {
-    border-top-color: #4a6ee0;
+    border-top-color: var(--color-blue);
 }
 
 .border-red {
-    border-top-color: #c94f53;
+    border-top-color: var(--color-red);
 }
 
 .border-purple {
-    border-top-color: #8c52d4;
+    border-top-color: var(--color-purple);
 }
 
 .border-orange {
-    border-top-color: #f77a4a;
+    border-top-color: var(--color-orange);
 }
 
 .border-darkpurple {
-    border-top-color: #3d0963;
+    border-top-color: var(--color-primary-dark);
 }
 
 .border-gold {
-    border-top-color: #c19a6b;
+    border-top-color: var(--color-gold);
 }
 
 /* color marron dorado */
@@ -188,17 +188,17 @@
 
 [data-theme='dark'] .fechas-title,
 [data-theme='dark'] .stage-title {
-    color: #e2d1f9;
+    color: var(--color-secondary-light);
 }
 
 [data-theme='dark'] .fecha-card {
-    background-color: #2a2a2a;
+    background-color: var(--color-gray-dark);
 }
 
 [data-theme='dark'] .card-countries,
 [data-theme='dark'] .card-desc,
 [data-theme='dark'] .fechas-footer-note {
-    color: #cccccc;
+    color: var(--color-gray-light);
 }
 
 [data-theme='dark'] .card-title {
@@ -206,26 +206,26 @@
 }
 
 [data-theme='dark'] .green-badge {
-    background-color: #1a4a25;
-    color: #e5f5e8;
+    background-color: var(--color-success-dark);
+    color: var(--color-success-bg);
 }
 
 [data-theme='dark'] .grey-badge {
-    background-color: #444;
-    color: #eee;
+    background-color: var(--color-gray-medium);
+    color: var(--color-gray-eee);
 }
 
 [data-theme='dark'] .card-btn {
-    background-color: #444;
-    color: #eee;
+    background-color: var(--color-gray-medium);
+    color: var(--color-gray-eee);
 }
 
 [data-theme='dark'] .card-btn:hover {
-    background-color: #555;
+    background-color: var(--color-gray-555);
 }
 
 [data-theme='dark'] .final-stage {
-    background-color: #2a2a2a;
+    background-color: var(--color-gray-dark);
 }
 
 /* Responsividad */

@@ -21,6 +21,20 @@ const Fechas: React.FC = () => {
         ));
     };
 
+    interface Region {
+        colorId: string;
+        title: string;
+        badge?: string;
+        countries: string;
+    }
+
+    interface Stage {
+        isFinal?: boolean;
+        title: string;
+        badge?: string;
+        description: string;
+    }
+
     return (
         <div className="fechas-page container">
             <h1 className="fechas-title">
@@ -29,7 +43,7 @@ const Fechas: React.FC = () => {
 
             <div className="fechas-regions-grid">
                 {t('fechasCierre.regions', { returnObjects: true }) && Array.isArray(t('fechasCierre.regions', { returnObjects: true })) &&
-                    (t('fechasCierre.regions', { returnObjects: true }) as any[]).map((region: any, index: number) => (
+                    (t('fechasCierre.regions', { returnObjects: true }) as Region[]).map((region, index) => (
                         <div className={`fecha-card region-card border-${region.colorId}`} key={index}>
                             <div className="card-header">
                                 <h3 className="card-title">{region.title}</h3>
@@ -43,7 +57,7 @@ const Fechas: React.FC = () => {
 
             <div className="fechas-stages-grid">
                 {t('fechasCierre.stages', { returnObjects: true }) && Array.isArray(t('fechasCierre.stages', { returnObjects: true })) &&
-                    (t('fechasCierre.stages', { returnObjects: true }) as any[]).map((stage: any, index: number) => {
+                    (t('fechasCierre.stages', { returnObjects: true }) as Stage[]).map((stage, index) => {
                         const isFinal = stage.isFinal;
                         return (
                             <div className={`fecha-card stage-card ${isFinal ? 'border-gold final-stage' : 'border-darkpurple'}`} key={index}>

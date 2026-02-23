@@ -11,6 +11,34 @@ const Categorias: React.FC = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    const renderWithNewlines = (text: string) => {
+        if (!text) return null;
+        return text.split('\n').map((line, i, arr) => (
+            <React.Fragment key={i}>
+                {line}
+                {i !== arr.length - 1 && <br />}
+            </React.Fragment>
+        ));
+    };
+
+    interface CategoriaSection {
+        id: string;
+        title: string;
+        text?: string;
+    }
+
+    interface RubroItem {
+        id?: string;
+        title: string;
+        description: string;
+    }
+
+    interface CategoriaBlock {
+        categoryTitle: string;
+        categoryDescription?: string;
+        items: RubroItem[];
+    }
+
     // Simulated array of categories to create the 3-column grid look as requested.
     // In a real scenario, this might come from t('categorias.list', {returnObjects: true})
     const categoryItems = Array.from({ length: 6 }, (_, i) => ({
@@ -22,12 +50,7 @@ const Categorias: React.FC = () => {
     return (
         <div className="categorias-page container">
             <h1 className="categorias-title">
-                {t('categorias.pageTitle', 'Categorías del FIP\n2026').split('\n').map((line: string, i: number) => (
-                    <React.Fragment key={i}>
-                        {line}
-                        {i !== t('categorias.pageTitle', 'Categorías del FIP\n2026').split('\n').length - 1 && <br />}
-                    </React.Fragment>
-                ))}
+                {renderWithNewlines(t('categorias.pageTitle', 'Categorías del FIP\n2026'))}
             </h1>
 
             <div className="categorias-grid">
@@ -49,7 +72,7 @@ const Categorias: React.FC = () => {
             <div className="categorias-sections-container">
                 {/* Render predefined Text Sections from i18n if they exist */}
                 {t('categorias.sections', { returnObjects: true }) && Array.isArray(t('categorias.sections', { returnObjects: true })) &&
-                    (t('categorias.sections', { returnObjects: true }) as any[]).map((section: any, idx: number) => (
+                    (t('categorias.sections', { returnObjects: true }) as CategoriaSection[]).map((section, idx) => (
                         <div className="categorias-text-section" key={idx}>
                             <h2 className="categorias-section-header">
                                 <span className="section-id">{section.id}</span>
@@ -58,12 +81,7 @@ const Categorias: React.FC = () => {
                             </h2>
                             {section.text && (
                                 <p className="categorias-section-text">
-                                    {section.text.split('\n').map((line: string, i: number) => (
-                                        <React.Fragment key={i}>
-                                            {line}
-                                            {i !== section.text.split('\n').length - 1 && <br />}
-                                        </React.Fragment>
-                                    ))}
+                                    {renderWithNewlines(section.text)}
                                 </p>
                             )}
                         </div>
@@ -74,7 +92,7 @@ const Categorias: React.FC = () => {
                 {/* Render the Detailed Categories from the imported Data Store */}
                 <div className="categorias-detailed-list">
                     {t('categorias.detailedList', { returnObjects: true }) && Array.isArray(t('categorias.detailedList', { returnObjects: true })) &&
-                        (t('categorias.detailedList', { returnObjects: true }) as any[]).map((categoryBlock: any, index: number) => (
+                        (t('categorias.detailedList', { returnObjects: true }) as CategoriaBlock[]).map((categoryBlock, index) => (
                             <div className="categoria-detail-block" key={index}>
                                 <h2 className="categoria-detail-header">
                                     {categoryBlock.categoryTitle}
@@ -86,7 +104,7 @@ const Categorias: React.FC = () => {
                                 )}
 
                                 <div className="rubro-items">
-                                    {categoryBlock.items.map((item: any, itemIdx: number) => (
+                                    {categoryBlock.items.map((item, itemIdx) => (
                                         <div className="rubro-item" key={itemIdx}>
                                             <div className="rubro-icon-wrapper">
                                                 <FaTrophy className="rubro-icon" />

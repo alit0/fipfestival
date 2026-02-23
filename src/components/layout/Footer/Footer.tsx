@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <div className="footer-top">
                     {/* Placeholder Logic for Logo if image not found, text fallback */}
                     <div className="footer-logo logo">
-                        <h1>FIP<span>festival</span></h1>
+                        <span className="logo-text" role="heading" aria-level={1}>FIP<span>festival</span></span>
                     </div>
 
                     <div className="footer-socials-mini">

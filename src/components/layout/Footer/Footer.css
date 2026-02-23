@@ -16,18 +16,18 @@
 }
 
 .footer-logo {
-    font-size: 1.8rem;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
-.footer-logo h1 {
+.footer-logo .logo-text {
     font-size: 1.8rem;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
 }
 
-.footer-logo span {
+.footer-logo .logo-text span {
     color: #cccccc;
     font-weight: 300;
 }

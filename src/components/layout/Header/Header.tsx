@@ -1,24 +1,19 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
-import { useTheme } from '../../../hooks/useTheme';
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
+import { LanguageSelector } from '../../common/LanguageSelector/LanguageSelector';
+import { ThemeToggle } from '../../common/ThemeToggle/ThemeToggle';
 import './Header.css';
 
 const Header: React.FC = () => {
-    const { t, i18n } = useTranslation();
-    const { theme, toggleTheme } = useTheme();
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
     const location = useLocation();
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleLang = () => setIsLangOpen(!isLangOpen);
-
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
-        setIsLangOpen(false);
-    };
 
     const navLinks = [
         { key: 'reglamento', label: t('nav.rules') },
@@ -39,14 +34,12 @@ const Header: React.FC = () => {
                 <div className="container header-top-content">
                     <div className="logo">
                         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <h1>FIP<span>festival</span></h1>
+                            <span className="logo-text" role="heading" aria-level={1}>FIP<span>festival</span></span>
                         </Link>
                     </div>
 
                     <div className="header-actions">
-                        <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
-                            {theme === 'dark' ? <FaSun /> : <FaMoon />}
-                        </button>
+                        <ThemeToggle />
 
                         <div className="auth-links">
                             <a href="#">{t('nav.loginJudges')}</a>
@@ -63,24 +56,11 @@ const Header: React.FC = () => {
                             <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
                         </div>
 
-                        <div className="lang-selector">
-                            <button onClick={toggleLang} className="lang-btn">
-                                {i18n.language === 'es' ? 'Español' :
-                                    i18n.language === 'en' ? 'English' :
-                                        i18n.language === 'it' ? 'Italiano' :
-                                            i18n.language === 'fr' ? 'Français' :
-                                                i18n.language === 'pt' ? 'Português' : 'Language'} ▼
-                            </button>
-                            {isLangOpen && (
-                                <ul className="lang-dropdown">
-                                    <li onClick={() => changeLanguage('es')}>Español</li>
-                                    <li onClick={() => changeLanguage('en')}>English</li>
-                                    <li onClick={() => changeLanguage('it')}>Italiano</li>
-                                    <li onClick={() => changeLanguage('fr')}>Français</li>
-                                    <li onClick={() => changeLanguage('pt')}>Português</li>
-                                </ul>
-                            )}
-                        </div>
+                        <LanguageSelector
+                            isLangOpen={isLangOpen}
+                            toggleLang={toggleLang}
+                            setIsLangOpen={setIsLangOpen}
+                        />
 
                         <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
                             {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -112,16 +92,12 @@ const Header: React.FC = () => {
                             <a href="#">{t('nav.loginAgencies')}</a>
                         </div>
 
-                        <div className="lang-selector-mobile">
-                            <span>{t('nav.selectLanguage')}:</span>
-                            <div className="lang-options">
-                                <button onClick={() => i18n.changeLanguage('es')} className={i18n.language === 'es' ? 'active' : ''}>ES</button>
-                                <button onClick={() => i18n.changeLanguage('en')} className={i18n.language === 'en' ? 'active' : ''}>EN</button>
-                                <button onClick={() => i18n.changeLanguage('it')} className={i18n.language === 'it' ? 'active' : ''}>IT</button>
-                                <button onClick={() => i18n.changeLanguage('fr')} className={i18n.language === 'fr' ? 'active' : ''}>FR</button>
-                                <button onClick={() => i18n.changeLanguage('pt')} className={i18n.language === 'pt' ? 'active' : ''}>PT</button>
-                            </div>
-                        </div>
+                        <LanguageSelector
+                            isLangOpen={false}
+                            toggleLang={() => { }}
+                            setIsLangOpen={() => { }}
+                            isMobile={true}
+                        />
 
                         <div className="social-icons">
                             <a href="#" aria-label="Instagram"><FaInstagram /></a>

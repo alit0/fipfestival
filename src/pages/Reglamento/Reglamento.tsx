@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Reglamento.css';
+import FipSocials from '../../components/layout/FipSocials/FipSocials';
 
 interface ReglamentoItem {
     id?: string;
@@ -177,6 +178,8 @@ const Reglamento: React.FC = () => {
                     ))}
                 </div>
             </div>
+
+            <FipSocials />
         </div>
     );
 };

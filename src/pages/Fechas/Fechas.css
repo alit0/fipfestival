@@ -1,0 +1,248 @@
+.fechas-page {
+    padding: 60px 20px;
+    background-color: var(--bg-color, #fdfdfd);
+    color: var(--text-color, #1a1a1a);
+}
+
+.fechas-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color, #290a59);
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+
+/* Grillas Generales */
+.fechas-regions-grid,
+.fechas-stages-grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.fechas-regions-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Centrar el último impar de Regiones */
+.fechas-regions-grid>.region-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+}
+
+.fechas-stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Centrar el último (la fiesta) de Stages */
+.fechas-stages-grid>.stage-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+}
+
+/* Tarjeta Base */
+.fecha-card {
+    background-color: var(--card-bg, #ffffff);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top-width: 8px;
+    border-top-style: solid;
+}
+
+.fecha-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header de la tarjeta */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color, #1a1a1a);
+    text-transform: uppercase;
+    flex: 1;
+    padding-right: 15px;
+}
+
+.stage-title {
+    color: var(--primary-color, #290a59);
+}
+
+/* Badges */
+.card-badge {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.green-badge {
+    background-color: #e5f5e8;
+    color: #0b4f1b;
+}
+
+.grey-badge {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Textos */
+.card-countries,
+.card-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted, #555);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-btn {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: var(--bg-hover, #e9ecef);
+    color: var(--text-color, #1a1a1a);
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card-btn:hover {
+    background-color: #d1d5da;
+}
+
+/* Fiesta de premiación dorada/marrón especial */
+.final-stage {
+    background-color: var(--bg-color, #fdfdfd);
+    border-width: 2px !important;
+    border-radius: 12px;
+    box-shadow: none;
+    border-top-width: 8px !important;
+    opacity: 0.9;
+}
+
+/* Footer note */
+.fechas-footer-note {
+    text-align: center;
+    color: var(--text-muted, #666);
+    font-size: 0.9rem;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+/* Bordes Superiores Dinámicos */
+.border-green {
+    border-top-color: #4CAF50;
+}
+
+.border-blue {
+    border-top-color: #4a6ee0;
+}
+
+.border-red {
+    border-top-color: #c94f53;
+}
+
+.border-purple {
+    border-top-color: #8c52d4;
+}
+
+.border-orange {
+    border-top-color: #f77a4a;
+}
+
+.border-darkpurple {
+    border-top-color: #3d0963;
+}
+
+.border-gold {
+    border-top-color: #c19a6b;
+}
+
+/* color marron dorado */
+
+/* Tema Oscuro */
+[data-theme='dark'] .fechas-page {
+    background-color: var(--bg-color, #121212);
+}
+
+[data-theme='dark'] .fechas-title,
+[data-theme='dark'] .stage-title {
+    color: #e2d1f9;
+}
+
+[data-theme='dark'] .fecha-card {
+    background-color: #2a2a2a;
+}
+
+[data-theme='dark'] .card-countries,
+[data-theme='dark'] .card-desc,
+[data-theme='dark'] .fechas-footer-note {
+    color: #cccccc;
+}
+
+[data-theme='dark'] .card-title {
+    color: #ffffff;
+}
+
+[data-theme='dark'] .green-badge {
+    background-color: #1a4a25;
+    color: #e5f5e8;
+}
+
+[data-theme='dark'] .grey-badge {
+    background-color: #444;
+    color: #eee;
+}
+
+[data-theme='dark'] .card-btn {
+    background-color: #444;
+    color: #eee;
+}
+
+[data-theme='dark'] .card-btn:hover {
+    background-color: #555;
+}
+
+[data-theme='dark'] .final-stage {
+    background-color: #2a2a2a;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+
+    .fechas-regions-grid,
+    .fechas-stages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fechas-regions-grid>.region-card:last-child:nth-child(odd),
+    .fechas-stages-grid>.stage-card:last-child:nth-child(odd) {
+        width: 100%;
+        grid-column: auto;
+    }
+
+    .fechas-title {
+        font-size: 2.2rem;
+    }
+}

@@ -5,6 +5,10 @@ import LazySection from './components/common/LazySection';
 import Home from './pages/Home/Home';
 import Reglamento from './pages/Reglamento/Reglamento';
 
+// Lazy load pages
+const Categorias = React.lazy(() => import('./pages/Categorias/Categorias'));
+const Fechas = React.lazy(() => import('./pages/Fechas/Fechas'));
+
 // Lazy load Footer
 const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
 
@@ -16,6 +20,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reglamento" element={<Reglamento />} />
+          <Route path="/categorias" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <Categorias />
+            </React.Suspense>
+          } />
+          <Route path="/fechas" element={
+            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+              <Fechas />
+            </React.Suspense>
+          } />
         </Routes>
 
         <LazySection>

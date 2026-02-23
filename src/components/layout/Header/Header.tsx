@@ -95,7 +95,7 @@ const Header: React.FC = () => {
                         {navLinks.map((link) => (
                             <li key={link.key}>
                                 <Link
-                                    to={link.key === 'reglamento' ? '/reglamento' : (location.pathname === '/' ? `#${link.key}` : `/#${link.key}`)}
+                                    to={['reglamento', 'categorias', 'fechas'].includes(link.key) ? `/${link.key}` : (location.pathname === '/' ? `#${link.key}` : `/#${link.key}`)}
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.label}

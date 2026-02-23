@@ -1,6 +1,16 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { reglamentoES } from './data/reglamentoES';
+import { categoriasES } from './data/categoriasES';
+import { categoriasEN } from './data/categoriasEN';
+import { categoriasIT } from './data/categoriasIT';
+import { categoriasFR } from './data/categoriasFR';
+import { categoriasPT } from './data/categoriasPT';
+import { fechasCierreES } from './data/fechasCierreES';
+import { fechasCierreEN } from './data/fechasCierreEN';
+import { fechasCierreIT } from './data/fechasCierreIT';
+import { fechasCierreFR } from './data/fechasCierreFR';
+import { fechasCierrePT } from './data/fechasCierrePT';
 
 const resources = {
   en: {
@@ -41,6 +51,15 @@ const resources = {
         "title": "22 Sectors. +200 categories",
         "cardTitle": "Promotional Marketing (PM)",
         "cardSubtitle": "SECTOR 1"
+      },
+      "categorias": {
+        "pageTitle": "FIP Categories\n2026",
+        "downloadPdf": "Download Categories PDF in English",
+        "sections": [
+          { "id": "A", "title": "Conditions of participation", "text": "This official regulation is integrated by its general articles and complementary clarifications.\nOnce the registration form is submitted, all rules are implicitly agreed and accepted by the participant." },
+          { "id": "B", "title": "Conditions of participation", "text": "This official regulation is integrated by its general articles and complementary clarifications.\nOnce the registration form is submitted, all rules are implicitly agreed and accepted by the participant." }
+        ],
+        "detailedList": categoriasEN
       },
       "jury": {
         "title": "International Jury",
@@ -88,7 +107,8 @@ const resources = {
         ...reglamentoES,
         "title": "FIP Rules\n2026",
         "description": "These official rules are composed of their general articles and complementary clarifications.\nOnce the registration form is submitted, all rules are implicitly agreed upon and accepted by the participant."
-      }
+      },
+      "fechasCierre": fechasCierreEN
     }
   },
   es: {
@@ -129,6 +149,15 @@ const resources = {
         "title": "22 Rubros. +200 categorias",
         "cardTitle": "Marketing Promocional (MP)",
         "cardSubtitle": "RUBRO 1"
+      },
+      "categorias": {
+        "pageTitle": "Categorías del FIP\n2026",
+        "downloadPdf": "Descargar PDF Categorías en español",
+        "sections": [
+          { "id": "A", "title": "Condiciones de participacion", "text": "Este reglamento de carácter oficial, está integrado por sus artículos generales y sus aclaraciones complementarias.\nUna vez enviado el formulario de inscripción, todas las reglas quedan implícitamente convenidas y aceptadas por el participante." },
+          { "id": "B", "title": "Condiciones de participacion", "text": "Este reglamento de carácter oficial, está integrado por sus artículos generales y sus aclaraciones complementarias.\nUna vez enviado el formulario de inscripción, todas las reglas quedan implícitamente convenidas y aceptadas por el participante." }
+        ],
+        "detailedList": categoriasES
       },
       "jury": {
         "title": "Jurado internacional",
@@ -172,7 +201,8 @@ const resources = {
         "replicas": "Solicitud de Réplicas .doc",
         "categories": "Categorías .pdf"
       },
-      "reglamento": reglamentoES
+      "reglamento": reglamentoES,
+      "fechasCierre": fechasCierreES
     }
   },
   it: {
@@ -213,6 +243,15 @@ const resources = {
         "title": "22 Settori. +200 categorie",
         "cardTitle": "Marketing Promozionale (MP)",
         "cardSubtitle": "SETTORE 1"
+      },
+      "categorias": {
+        "pageTitle": "Categorie FIP\n2026",
+        "downloadPdf": "Scarica il PDF delle categorie in italiano",
+        "sections": [
+          { "id": "A", "title": "Condizioni di partecipazione", "text": "Questo regolamento ufficiale è integrato dai suoi articoli generali e chiarimenti complementari.\nUna volta inviato il modulo di registrazione, tutte le regole sono implicitamente concordate e accettate dal partecipante." },
+          { "id": "B", "title": "Condizioni di partecipazione", "text": "Questo regolamento ufficiale è integrato dai suoi articoli generali e chiarimenti complementari.\nUna volta inviato il modulo di registrazione, tutte le regole sono implicitamente concordate e accettate dal partecipante." }
+        ],
+        "detailedList": categoriasIT
       },
       "jury": {
         "title": "Giuria Internazionale",
@@ -260,7 +299,8 @@ const resources = {
         ...reglamentoES,
         "title": "Regole del FIP\n2026",
         "description": "Queste regole ufficiali sono composte da articoli generali e chiarimenti complementari.\nUna volta inviato il modulo di registrazione, tutte le regole sono implicitamente concordate e accettate dal partecipante."
-      }
+      },
+      "fechasCierre": fechasCierreIT
     }
   },
   fr: {
@@ -301,6 +341,15 @@ const resources = {
         "title": "22 Secteurs. +200 catégories",
         "cardTitle": "Marketing Promotionnel (MP)",
         "cardSubtitle": "SECTEUR 1"
+      },
+      "categorias": {
+        "pageTitle": "Catégories FIP\n2026",
+        "downloadPdf": "Télécharger le PDF des catégories en français",
+        "sections": [
+          { "id": "A", "title": "Conditions de participation", "text": "Ce règlement officiel est intégré par ses articles généraux et clarifications complémentaires.\nUne fois le formulaire d'inscription soumis, toutes les règles sont implicitement convenues et acceptées par le participant." },
+          { "id": "B", "title": "Conditions de participation", "text": "Ce règlement officiel est intégré par ses articles généraux et clarifications complémentaires.\nUne fois le formulaire d'inscription soumis, toutes les règles sont implicitement convenues et acceptées par le participant." }
+        ],
+        "detailedList": categoriasFR
       },
       "jury": {
         "title": "Jury International",
@@ -348,7 +397,8 @@ const resources = {
         ...reglamentoES,
         "title": "Règles du FIP\n2026",
         "description": "Ces règles officielles sont composées de leurs articles généraux et de clarifications complémentaires.\nUne fois le formulaire d'inscription soumis, toutes les règles sont implicitement convenues et acceptées par le participant."
-      }
+      },
+      "fechasCierre": fechasCierreFR
     }
   },
   pt: {
@@ -389,6 +439,15 @@ const resources = {
         "title": "22 Setores. +200 categorias",
         "cardTitle": "Marketing Promocional (MP)",
         "cardSubtitle": "SETOR 1"
+      },
+      "categorias": {
+        "pageTitle": "Categorias do FIP\n2026",
+        "downloadPdf": "Baixar pdf das categorias em portugues",
+        "sections": [
+          { "id": "A", "title": "Condições de participação", "text": "Este regulamento oficial é integrado por seus artigos gerais e esclarecimentos complementares.\nUma vez enviado o formulário de inscrição, todas as regras são implicitamente acordadas e aceitas pelo participante." },
+          { "id": "B", "title": "Condições de participação", "text": "Este regulamento oficial é integrado por seus artigos gerais e esclarecimentos complementares.\nUma vez enviado o formulário de inscrição, todas as regras são implicitamente acordadas e aceitas pelo participante." }
+        ],
+        "detailedList": categoriasPT
       },
       "jury": {
         "title": "Júri Internacional",
@@ -436,7 +495,8 @@ const resources = {
         ...reglamentoES,
         "title": "Regras do FIP\n2026",
         "description": "Estas regras oficiais são compostas por seus artigos gerais e esclarecimentos complementares.\nUma vez enviado o formulário de inscrição, todas as regras são implicitamente acordadas e aceitas pelo participante."
-      }
+      },
+      "fechasCierre": fechasCierrePT
     }
   }
 };
@@ -452,3 +512,4 @@ i18n
   });
 
 export default i18n;
+

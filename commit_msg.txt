@@ -1,0 +1,6 @@
+feat(ui): rediseño línea tiempo y clinerules
+
+- Se implementaron círculos SVG responsivos para el timeline de Inscripción, adaptables a modo claro y oscuro.
+- Se agregó una línea de conexión horizontal continua en el hero y gaps en el layout vertical.
+- Se introdujeron nuevas traducciones (i18n) para los nuevos botones e íconos sociales.
+- Se actualizaron de manera estricta las reglas `.clinerules` para forzar la lectura concurrente de skills.

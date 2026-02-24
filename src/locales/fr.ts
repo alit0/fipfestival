@@ -239,8 +239,12 @@ export const fr = {
         "inscripcion": {
             "title": "Inscription",
             "btnForm": "Formulaire d'inscription - français",
+            "btnFormPT": "Formulaire d'inscription - portugais",
             "btnDownloadForm": "Formulaire d'inscription",
             "btnDownloadModel": "Modèle de présentation",
+            "social": {
+                "title": "SUIVEZ-NOUS"
+            },
             "steps": {
                 "1": {
                     "label": "Étape 1",

@@ -1,5 +1,5 @@
 .inscripcion-page {
-    padding: 180px 5% 80px;
+    padding: 40px 5% 80px;
     /* Offset for fixed header */
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -42,6 +42,18 @@
     width: 100%;
     margin-bottom: 40px;
     position: relative;
+    z-index: 0;
+}
+
+.horizontal-timeline::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: calc(25% - 25px);
+    height: 1px;
+    background-color: var(--border-color, #ccc);
+    z-index: -1;
 }
 
 .timeline-step {
@@ -53,22 +65,12 @@
     z-index: 2;
 }
 
-.timeline-connector {
-    flex: 1;
-    height: 1px;
-    background-color: var(--border-color, #ccc);
-    margin-top: 25px;
-    /* Aligns with middle of circle */
-    z-index: 1;
-}
 
-/* Step Circles */
+
+/* Step Circles Containers */
 .step-circle {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: var(--bg-color-alt);
-    border: 3px solid var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,39 +78,40 @@
     transition: all 0.3s ease;
 }
 
-.step-circle .inner-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
+/* Step SVG Styles */
+.step-svg.active .step-outer-ring {
+    stroke: var(--color-primary-border, #BBA3D9);
+    fill: var(--color-bg);
 }
 
-.step-circle.active {
-    background-color: var(--bg-color);
-    /* Lightest bg */
+.step-svg.active .step-inner-dot {
+    fill: var(--color-primary-dark, #290a59);
 }
 
-.step-circle.active .inner-dot {
-    background-color: var(--bg-color-alt);
-    border: 4px solid var(--primary-color);
-    /* Hollow dot look */
+.step-svg.inactive .step-outer-circle {
+    fill: var(--color-primary-dark, #290a59);
 }
 
-/* Adjust timeline colors for dark mode */
-[data-theme='dark'] .step-circle {
-    background-color: var(--primary-color);
+.step-svg.inactive .step-inner-dot-inactive {
+    fill: var(--color-gray-light, #cccccc);
 }
 
-[data-theme='dark'] .step-circle .inner-dot {
-    background-color: var(--bg-color);
+/* Dark Mode SVG Adjustments */
+[data-theme='dark'] .step-svg.active .step-outer-ring {
+    stroke: var(--color-primary-muted, #7c6896);
+    fill: var(--color-bg);
 }
 
-[data-theme='dark'] .step-circle.active {
-    background-color: var(--bg-color-alt);
+[data-theme='dark'] .step-svg.active .step-inner-dot {
+    fill: var(--color-text, #ffffff);
 }
 
-[data-theme='dark'] .step-circle.active .inner-dot {
-    border: 4px solid var(--primary-color);
+[data-theme='dark'] .step-svg.inactive .step-outer-circle {
+    fill: var(--color-primary-light, #4c3f68);
+}
+
+[data-theme='dark'] .step-svg.inactive .step-inner-dot-inactive {
+    fill: var(--color-bg, #1a0b2e);
 }
 
 .step-content h4 {
@@ -126,7 +129,113 @@
 
 /* Actions */
 .inscripcion-actions {
-    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.inscripcion-actions .btn-primary-dark {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary-dark, #1D0E4C);
+    color: #ffffff;
+    padding: 10px 10px 10px 30px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+    min-width: 300px;
+}
+
+.inscripcion-actions .btn-primary-dark:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+[data-theme='dark'] .inscripcion-actions .btn-primary-dark {
+    background-color: var(--color-primary-light, #4c3f68);
+}
+
+.btn-icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.btn-icon-circle .btn-icon {
+    color: var(--color-primary-dark, #1D0E4C);
+    font-size: 1.2rem;
+}
+
+/* Social Section */
+.inscripcion-social {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.inscripcion-social h3 {
+    color: var(--color-primary-dark, #1D0E4C);
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+[data-theme='dark'] .inscripcion-social h3 {
+    color: var(--color-primary-border, #BBA3D9);
+}
+
+.social-pills-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1.5px solid var(--color-primary-dark, #1D0E4C);
+    color: var(--color-primary-dark, #1D0E4C);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+[data-theme='dark'] .social-pill {
+    border-color: var(--color-gray-light, #ccc);
+    color: var(--color-text);
+}
+
+.social-pill:hover {
+    background-color: var(--color-primary-dark, #1D0E4C);
+    color: #fff;
+}
+
+[data-theme='dark'] .social-pill:hover {
+    background-color: var(--color-gray-light, #ccc);
+    color: var(--color-bg);
+}
+
+.social-pill svg {
+    font-size: 1.2rem;
 }
 
 /* Vertical Timeline Layout */
@@ -134,20 +243,19 @@
     width: 100%;
     max-width: 900px;
     position: relative;
-    padding-left: 50px;
-    /* Space for the line */
+    padding-left: 0;
     margin-bottom: 80px;
+    z-index: 0;
 }
 
 .vertical-line {
     position: absolute;
-    left: 24px;
-    /* Center of the 50px circle, taking padding into account */
-    top: 50px;
-    bottom: 50px;
+    left: 24.5px;
+    top: 25px;
+    bottom: 25px;
     width: 1px;
     background-color: var(--border-color, #ccc);
-    z-index: 1;
+    z-index: -1;
 }
 
 .v-step {
@@ -161,31 +269,12 @@
 .v-step-circle {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     margin-right: 30px;
-    position: absolute;
-    left: -50px;
-}
-
-.v-step-circle .inner-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--bg-color);
-}
-
-.v-step-circle.active {
-    background-color: var(--bg-color-alt);
-    border: 3px solid var(--primary-color);
-}
-
-.v-step-circle.active .inner-dot {
-    background-color: var(--text-color);
+    position: relative;
 }
 
 .v-step-content {
@@ -309,6 +398,6 @@
     }
 
     .inscripcion-page {
-        padding: 140px 5% 60px;
+        padding: 0 5% 60px;
     }
 }

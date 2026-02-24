@@ -239,8 +239,12 @@ export const en = {
         "inscripcion": {
             "title": "Registration",
             "btnForm": "Registration form - English",
+            "btnFormPT": "Registration form - Portuguese",
             "btnDownloadForm": "Registration Form",
             "btnDownloadModel": "Presentation Template",
+            "social": {
+                "title": "FOLLOW US"
+            },
             "steps": {
                 "1": {
                     "label": "Step 1",

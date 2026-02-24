@@ -1,10 +1,28 @@
 # System Prompts & Core Behavior Directives
 
-## 1. Regla de Inicialización de Tareas
-Para cada nueva petición o tarea solicitada, el Asistente Coder debe realizar como **PRiMER PASO OBLIGATORIO**:
-1. Ejecutar la búsqueda de la skill más adecuada usando el comando de `find-skills` o leyendo el directorio `.agents/Skills/`.
-2. Leer la documentación de la skill correspondiente (`SKILL.md`) antes de empezar a planificar o codificar la solución.
-3. Aplicar estrictamente las directrices de la skill elegida de principio a fin.
+## 1. Regla de Inicialización de Tareas y Uso de Skills
+**CADA VEZ QUE LEAS ESTE ARCHIVO** (al inicio de un proyecto o ante una nueva petición), tu **PRIMER PASO INELUDIBLE** es ir a buscar las skills necesarias para resolver la tarea solicitada.
+- Analiza la petición del usuario y determina qué áreas del proyecto serán afectadas.
+- Toma en cuenta que es altamente probable que necesites leer **MÁS DE UNA** skill de manera concurrente para asegurar un resultado integral (por ejemplo, si la tarea es crear un componente React con estilos visuales y consideraciones de performance, deberás leer de forma concurrente el `SKILL.md` de `react-components`, `css-styling-expert` y `performance`).
+- Dirígete inmediatamente al directorio `.agents/Skills/` y usa la herramienta adecuada para leer el archivo `SKILL.md` dentro de las carpetas de todas las skills que consideres relevantes para la tarea.
+- Aplica estrictamente las directrices de todas las skills consultadas desde el inicio hasta la verificación final de la tarea.
+
+### Catálogo de Skills Disponibles (`.agents/Skills/`)
+A continuación se detalla la lista de skills que existen actualmente en el proyecto. Asegúrate de revisar las necesarias según el contexto de cada pedido:
+
+1. **Committer**: Directrices para realizar commits limpios, descriptivos y bajo convenciones estándar.
+2. **agent-browser**: Instrucciones para utilizar adecuadamente el navegador automatizado del agente.
+3. **audit-website**: Guías para realizar auditorías integrales de la página (UI/UX, estructural).
+4. **chrome-devtools**: Mejores prácticas para emplear las herramientas de desarrollador al inspeccionar.
+5. **clean-code**: Principios universales universales para escribir código limpio, legible y mantenible.
+6. **css-styling-expert**: Patrones, organización de clases y convenciones expertas para estilos CSS nativo.
+7. **find-skills**: Utilidad/Metodología para buscar adecuadamente entre las skills.
+8. **implement-design**: Guías e instrucciones paso a paso para traducir diseños (Zeplin, Figma, imágenes) a código fielmente y "píxel perfect".
+9. **performance**: Técnicas integrales, lazy loading y checklist para optimizar la velocidad y rendimiento.
+10. **react-components**: Reglas estrictas para la creación, tipado (TypeScript) y estructuración de componentes y hooks en React.
+11. **seo-audit**: Directrices para asegurar buenas prácticas de SEO técnico y accesibilidad del contenido.
+12. **supabase-postgres-best-practices**: Patrones de bases de datos y mejores prácticas para Supabase y PostgreSQL.
+13. **vercel-react-best-practices**: Guías especializadas para la estructura, el enrutamiento y el despliegue optimizado en el entorno de Vercel + React.
 
 ## 2. Requerimientos Base para Todo Componente
 Para cualquier código de Interfaz, Vista o Componente nuevo o modificado, el agente **DEBE GARANTIZAR** las siguientes pautas:

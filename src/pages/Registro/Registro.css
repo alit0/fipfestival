@@ -1,0 +1,73 @@
+/* Reutiliza estilos de Login.css mediante import en el componente */
+@import '../Login/Login.css';
+
+/* Selector de rol */
+.role-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.role-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem 0.75rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-align: center;
+}
+
+.role-card:hover {
+    border-color: rgba(245, 166, 35, 0.4);
+    background: rgba(245, 166, 35, 0.05);
+}
+
+.role-card--active {
+    border-color: #f5a623;
+    background: rgba(245, 166, 35, 0.1);
+}
+
+.role-icon {
+    font-size: 1.5rem;
+}
+
+.role-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.role-desc {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.3;
+}
+
+[data-theme='light'] .role-card {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .role-card:hover {
+    border-color: rgba(229, 133, 0, 0.5);
+}
+
+[data-theme='light'] .role-card--active {
+    border-color: #e58500;
+    background: rgba(229, 133, 0, 0.08);
+}
+
+[data-theme='light'] .role-label {
+    color: #111;
+}
+
+[data-theme='light'] .role-desc {
+    color: rgba(0, 0, 0, 0.4);
+}

@@ -379,7 +379,38 @@ export const pt = {
                     "p3": "O Hall of Fame poderá integrar diretamente as marcas que demonstraram desempenho excepcional e sustentado nas diferentes edições do Festival."
                 }
             },
-            "bioText": "Possui um Bachelor of Arts in Business Studies em Marketing pela Universidade de Exeter, MBA-Executive e PADE pelo ICAI-ICADE da Universidade Pontifícia de Comillas. Certificado em programas diretivos do MIT de Boston. Sua extensa carreira é respaldada pelas várias posições que ocupou: diretor de marketing, gerente comercial, diretor geral em setores tão diversos e competitivos como o de alimentos, bebidas, saúde e industrial. Sua riqueza de conhecimento o levou a fundar a TSMGO | The show must go on."
+            "bioText": "Possui um Bachelor of Arts in Business Studies em Marketing pela Universidade de Exeter, MBA-Executive e PADE pelo ICAI-ICADE da Universidade Pontifícia de Comillas. Certificado em programas diretivos do MIT de Boston. Sua riqueza de conhecimento o levou a fundar a TSMGO | The show must go on."
+        },
+        "auth": {
+            "loginTitle": "Bem-vindo de volta",
+            "loginSubtitle": "Entre na sua conta FIP Festival",
+            "registerTitle": "Criar conta",
+            "registerSubtitle": "Escolha seu tipo de acesso e preencha os dados",
+            "email": "Email",
+            "emailPlaceholder": "seu@email.com",
+            "password": "Senha",
+            "passwordPlaceholder": "Mínimo 6 caracteres",
+            "confirmPassword": "Confirmar senha",
+            "confirmPasswordPlaceholder": "Repita a senha",
+            "fullName": "Nome completo",
+            "fullNamePlaceholder": "Seu nome e sobrenome",
+            "login": "Entrar",
+            "loggingIn": "Entrando...",
+            "register": "Cadastrar",
+            "registering": "Criando conta...",
+            "createAccount": "Criar conta",
+            "noAccount": "Não tem uma conta?",
+            "haveAccount": "Já tem uma conta?",
+            "roleAgencia": "Agência",
+            "roleAgenciaDesc": "Inscreva campanhas no festival",
+            "roleJurado": "Jurado",
+            "roleJuradoDesc": "Avalie as peças participantes",
+            "selectRole": "Por favor selecione um tipo de acesso",
+            "passwordMismatch": "As senhas não coincidem",
+            "passwordTooShort": "A senha deve ter pelo menos 6 caracteres",
+            "invalidCredentials": "Email ou senha incorretos",
+            "registrationSuccess": "Conta criada!",
+            "checkEmail": "Verifique seu email para confirmar a conta. Redirecionando para o login..."
         }
     }
 };

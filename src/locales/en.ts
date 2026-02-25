@@ -380,6 +380,37 @@ export const en = {
                 }
             },
             "bioText": "He holds a Bachelor of Arts in Business Studies in Marketing from the University of Exeter, MBA-Executive and PADE from ICAI-ICADE of the Pontifical University of Comillas. Certified in executive programs from MIT in Boston. His extensive career is backed by the various positions he has held: marketing director, commercial manager, general manager in sectors as diverse and competitive as food, beverages, health and industrial. His wealth of knowledge led him to found TSMGO | The show must go on."
+        },
+        "auth": {
+            "loginTitle": "Welcome back",
+            "loginSubtitle": "Sign in to your FIP Festival account",
+            "registerTitle": "Create account",
+            "registerSubtitle": "Choose your access type and fill in your details",
+            "email": "Email",
+            "emailPlaceholder": "you@email.com",
+            "password": "Password",
+            "passwordPlaceholder": "At least 6 characters",
+            "confirmPassword": "Confirm password",
+            "confirmPasswordPlaceholder": "Repeat your password",
+            "fullName": "Full name",
+            "fullNamePlaceholder": "Your name and surname",
+            "login": "Sign in",
+            "loggingIn": "Signing in...",
+            "register": "Register",
+            "registering": "Creating account...",
+            "createAccount": "Create account",
+            "noAccount": "Don't have an account?",
+            "haveAccount": "Already have an account?",
+            "roleAgencia": "Agency",
+            "roleAgenciaDesc": "Submit campaigns to the festival",
+            "roleJurado": "Judge",
+            "roleJuradoDesc": "Evaluate the participating pieces",
+            "selectRole": "Please select an access type",
+            "passwordMismatch": "Passwords do not match",
+            "passwordTooShort": "Password must be at least 6 characters",
+            "invalidCredentials": "Incorrect email or password",
+            "registrationSuccess": "Account created!",
+            "checkEmail": "Check your email to confirm your account. Redirecting to login..."
         }
     }
 };

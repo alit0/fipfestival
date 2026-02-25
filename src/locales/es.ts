@@ -376,6 +376,37 @@ export const es = {
                 }
             },
             "bioText": "Es Bachelor of Arts in Business Studies en Marketing por la Universidad de Exeter, MBA-Executive y PADE por ICAI-ICADE de la Universidad Pontificia de Comillas. Certificado en programas directivos del MIT de Boston. Su amplia carrera la respaldan las distintas posiciones que ha ocupado: director de marketing, gerente comercial, director general en sectores tan diversos y competitivos como el de la alimentación, bebidas, salud e industrial. Su cúmulo de conocimientos lo llevó a fundar TSMGO | The show must go on."
+        },
+        "auth": {
+            "loginTitle": "Bienvenido de nuevo",
+            "loginSubtitle": "Ingresá a tu cuenta FIP Festival",
+            "registerTitle": "Crear cuenta",
+            "registerSubtitle": "Elegí tu tipo de acceso y completá los datos",
+            "email": "Email",
+            "emailPlaceholder": "tu@email.com",
+            "password": "Contraseña",
+            "passwordPlaceholder": "Mínimo 6 caracteres",
+            "confirmPassword": "Confirmar contraseña",
+            "confirmPasswordPlaceholder": "Repetí la contraseña",
+            "fullName": "Nombre completo",
+            "fullNamePlaceholder": "Tu nombre y apellido",
+            "login": "Iniciar sesión",
+            "loggingIn": "Ingresando...",
+            "register": "Registrarse",
+            "registering": "Creando cuenta...",
+            "createAccount": "Crear cuenta",
+            "noAccount": "¿No tenés cuenta?",
+            "haveAccount": "¿Ya tenés cuenta?",
+            "roleAgencia": "Agencia",
+            "roleAgenciaDesc": "Inscribí campañas al festival",
+            "roleJurado": "Jurado",
+            "roleJuradoDesc": "Evaluá las piezas participantes",
+            "selectRole": "Por favor seleccioná un tipo de acceso",
+            "passwordMismatch": "Las contraseñas no coinciden",
+            "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+            "invalidCredentials": "Email o contraseña incorrectos",
+            "registrationSuccess": "¡Cuenta creada!",
+            "checkEmail": "Revisá tu email para confirmar la cuenta. Redirigiendo al login..."
         }
     }
 };

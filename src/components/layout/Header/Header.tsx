@@ -42,9 +42,9 @@ const Header: React.FC = () => {
                         <ThemeToggle />
 
                         <div className="auth-links">
-                            <a href="#">{t('nav.loginJudges')}</a>
+                            <Link to="/login" state={{ role: 'jurado' }}>{t('nav.loginJudges')}</Link>
                             <span className="separator">|</span>
-                            <a href="#">{t('nav.loginAgencies')}</a>
+                            <Link to="/login" state={{ role: 'agencia' }}>{t('nav.loginAgencies')}</Link>
                         </div>
 
                         <div className="social-icons">
@@ -87,9 +87,9 @@ const Header: React.FC = () => {
                     {/* Mobile Only Extras */}
                     <div className="mobile-extras">
                         <div className="auth-links">
-                            <a href="#">{t('nav.loginJudges')}</a>
+                            <Link to="/login" state={{ role: 'jurado' }} onClick={() => setIsMenuOpen(false)}>{t('nav.loginJudges')}</Link>
                             <span className="separator">|</span>
-                            <a href="#">{t('nav.loginAgencies')}</a>
+                            <Link to="/login" state={{ role: 'agencia' }} onClick={() => setIsMenuOpen(false)}>{t('nav.loginAgencies')}</Link>
                         </div>
 
                         <LanguageSelector

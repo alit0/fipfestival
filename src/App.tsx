@@ -4,6 +4,9 @@ import Header from './components/layout/Header/Header';
 import LazySection from './components/common/LazySection';
 import Home from './pages/Home/Home';
 import Reglamento from './pages/Reglamento/Reglamento';
+import Login from './pages/Login/Login';
+import Registro from './pages/Registro/Registro';
+import { AuthProvider } from './context/AuthContext';
 
 // Lazy load pages
 const Categorias = React.lazy(() => import('./pages/Categorias/Categorias'));
@@ -19,54 +22,58 @@ const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main style={{ marginTop: '140px', minHeight: 'calc(100vh - 140px)' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/reglamento" element={<Reglamento />} />
-          <Route path="/categorias" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Categorias />
-            </React.Suspense>
-          } />
-          <Route path="/fechas" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Fechas />
-            </React.Suspense>
-          } />
-          <Route path="/tarifario" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Tarifario />
-            </React.Suspense>
-          } />
-          <Route path="/jurados" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Jurados />
-            </React.Suspense>
-          } />
-          <Route path="/premios" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Premios />
-            </React.Suspense>
-          } />
-          <Route path="/inscripcion" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <Inscripcion />
-            </React.Suspense>
-          } />
-          <Route path="/hall" element={
-            <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
-              <HallFama />
-            </React.Suspense>
-          } />
-        </Routes>
+    <AuthProvider>
+      <div className="App">
+        <Header />
+        <main style={{ marginTop: '140px', minHeight: 'calc(100vh - 140px)' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/reglamento" element={<Reglamento />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/registro" element={<Registro />} />
+            <Route path="/categorias" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Categorias />
+              </React.Suspense>
+            } />
+            <Route path="/fechas" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Fechas />
+              </React.Suspense>
+            } />
+            <Route path="/tarifario" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Tarifario />
+              </React.Suspense>
+            } />
+            <Route path="/jurados" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Jurados />
+              </React.Suspense>
+            } />
+            <Route path="/premios" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Premios />
+              </React.Suspense>
+            } />
+            <Route path="/inscripcion" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <Inscripcion />
+              </React.Suspense>
+            } />
+            <Route path="/hall" element={
+              <React.Suspense fallback={<div style={{ height: '100vh' }} />}>
+                <HallFama />
+              </React.Suspense>
+            } />
+          </Routes>
 
-        <LazySection>
-          <Footer />
-        </LazySection>
-      </main>
-    </div>
+          <LazySection>
+            <Footer />
+          </LazySection>
+        </main>
+      </div>
+    </AuthProvider>
   );
 }
 

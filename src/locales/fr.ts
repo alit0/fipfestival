@@ -377,6 +377,37 @@ export const fr = {
                 }
             },
             "bioText": "Il est titulaire d'un Bachelor of Arts in Business Studies en Marketing de l'Université d'Exeter, d'un MBA-Executive et d'un PADE de l'ICAI-ICADE de l'Université Pontificale de Comillas. Certifié en programmes exécutifs au MIT à Boston. Sa vaste carrière est soutenue par les différentes fonctions qu'il a occupées : directeur marketing, directeur commercial, directeur général dans des secteurs aussi divers et compétitifs que l'alimentation, les boissons, la santé et l'industrie. Son bagage de connaissances l'a amené à fonder TSMGO | The show must go on."
+        },
+        "auth": {
+            "loginTitle": "Bienvenue",
+            "loginSubtitle": "Connectez-vous à votre compte FIP Festival",
+            "registerTitle": "Créer un compte",
+            "registerSubtitle": "Choisissez votre type d'accès et remplissez vos informations",
+            "email": "Email",
+            "emailPlaceholder": "votre@email.com",
+            "password": "Mot de passe",
+            "passwordPlaceholder": "Minimum 6 caractères",
+            "confirmPassword": "Confirmer le mot de passe",
+            "confirmPasswordPlaceholder": "Répétez le mot de passe",
+            "fullName": "Nom complet",
+            "fullNamePlaceholder": "Votre nom et prénom",
+            "login": "Se connecter",
+            "loggingIn": "Connexion...",
+            "register": "S'inscrire",
+            "registering": "Création du compte...",
+            "createAccount": "Créer un compte",
+            "noAccount": "Pas encore de compte ?",
+            "haveAccount": "Déjà un compte ?",
+            "roleAgencia": "Agence",
+            "roleAgenciaDesc": "Soumettez des campagnes au festival",
+            "roleJurado": "Juge",
+            "roleJuradoDesc": "Évaluez les pièces participantes",
+            "selectRole": "Veuillez sélectionner un type d'accès",
+            "passwordMismatch": "Les mots de passe ne correspondent pas",
+            "passwordTooShort": "Le mot de passe doit comporter au moins 6 caractères",
+            "invalidCredentials": "Email ou mot de passe incorrect",
+            "registrationSuccess": "Compte créé !",
+            "checkEmail": "Vérifiez votre email pour confirmer le compte. Redirection vers la connexion..."
         }
     }
 };
